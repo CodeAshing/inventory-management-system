@@ -1,0 +1,17 @@
+D:\login layer\frontend\obj\Debug\frontend.csprojResolveAssemblyReference.cache
+D:\login layer\frontend\obj\Debug\frontend.FormPrincipal.resources
+D:\login layer\frontend\obj\Debug\frontend.login.resources
+D:\login layer\frontend\obj\Debug\frontend.Properties.Resources.resources
+D:\login layer\frontend\obj\Debug\frontend.csproj.GenerateResource.Cache
+D:\login layer\frontend\bin\Debug\frontend.exe.config
+D:\login layer\frontend\bin\Debug\frontend.exe
+D:\login layer\frontend\bin\Debug\frontend.pdb
+D:\login layer\frontend\bin\Debug\Data.dll
+D:\login layer\frontend\bin\Debug\Domain.dll
+D:\login layer\frontend\bin\Debug\Data.pdb
+D:\login layer\frontend\bin\Debug\Domain.pdb
+D:\login layer\frontend\obj\Debug\frontend.exe
+D:\login layer\frontend\obj\Debug\frontend.pdb
+D:\login layer\frontend\bin\Debug\common.dll
+D:\login layer\frontend\bin\Debug\common.pdb
+D:\login layer\frontend\obj\Debug\frontend.Forms.FormProduct.resources

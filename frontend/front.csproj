@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{570D5EF0-31CC-4C6E-BE80-1F6FF10ACFD1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>frontend</RootNamespace>
+    <AssemblyName>frontend</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChreneLib">
+      <HintPath>C:\Users\hp\Desktop\ChreneLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\INSTALLATION.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\INSTALLATION.Designer.cs">
+      <DependentUpon>INSTALLATION.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\list.Designer.cs">
+      <DependentUpon>list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MAINTENANCE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MAINTENANCE.Designer.cs">
+      <DependentUpon>MAINTENANCE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\payTerm%28I%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\payTerm%28I%29.Designer.cs">
+      <DependentUpon>payTerm%28I%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PayTerm%28M%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PayTerm%28M%29.Designer.cs">
+      <DependentUpon>PayTerm%28M%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RECIPT VOUCHER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RECIPT VOUCHER.Designer.cs">
+      <DependentUpon>RECIPT VOUCHER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PAYMENT VOUCHER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PAYMENT VOUCHER.Designer.cs">
+      <DependentUpon>PAYMENT VOUCHER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SEARCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SEARCH.Designer.cs">
+      <DependentUpon>SEARCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SPARE PART.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\.Designer.cs">
+      <DependentUpon>SPARE PART.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\INSTALLATION.ar-SA.resx">
+      <DependentUpon>INSTALLATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\INSTALLATION.resx">
+      <DependentUpon>INSTALLATION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\list.resx">
+      <DependentUpon>list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MAINTENANCE.resx">
+      <DependentUpon>MAINTENANCE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\payTerm%28I%29.resx">
+      <DependentUpon>payTerm%28I%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PAYMENT VOUCHER.resx">
+      <DependentUpon>PAYMENT VOUCHER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PayTerm%28M%29.resx">
+      <DependentUpon>PayTerm%28M%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RECIPT VOUCHER.resx">
+      <DependentUpon>RECIPT VOUCHER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SEARCH.resx">
+      <DependentUpon>SEARCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SPARE PART.resx">
+      <DependentUpon>SPARE PART.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\common.csproj">
+      <Project>{2202c772-e5a0-43f5-80c1-2df46e8875e6}</Project>
+      <Name>common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{c174c27a-8e4c-4416-8dfb-e47061128147}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{cd3a8362-4c47-4609-8e59-dbd8f0aa2330}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eded.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Z1kNah.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7OTIiJ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11686ad6feb0ff1a715482d0396c1896-700.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88986751_2562589673867293_1032522885421334528_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89017584_1019882405053535_6439213702594953216_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89059115_1253110474883678_1392734611351535616_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89165908_2347068198726555_474616576520224768_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89178864_199467601145306_4141129508851810304_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89191728_593565927899779_2054453178899890176_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89245413_234638990903985_5796044325703909376_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\claudio-de-sat-architecture-modern-elevator-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMS_Elevator_Building-w.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75945.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1poly-v-lift-driver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\external-content.duckduckgo.com.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elevator_core.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp2303645.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cohf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefaultjh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ede.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp2303787.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adam.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connections_elevator_maintenance-1024x683.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bde677ef98c047cb7c791bdbe642193b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\videoblocks-modern-hotel-office-skyscraper-building-elevator-lift-moving-up_b3y0p58rx_thumbnail-full04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-153756997-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lobby-on-pinterest-elevator-lobby-lobbies-and-hotel-lobby.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advances-in-modern-elevators-1024x683.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16117405071_9875ab6f20_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3rf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\erq.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\qddq.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\building_interior_architecture_147081_2560x1440.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp2303787a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADAM_elevator_3ed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\observationlift.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-1565417814737-6b4097de8a3a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ded.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\London-underground-Oxford-Circus-train-station-elevator-1457679.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elevator-Lobby-reduced.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elevator_cabin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dirty-elevator-buttons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hotel-Elevator-Hall-INTmasthead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13e.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elevator-modern-architecture-motion-blur-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

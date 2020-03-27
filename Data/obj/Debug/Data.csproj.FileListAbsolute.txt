@@ -1,0 +1,7 @@
+D:\login layer\Data\bin\Debug\Data.dll
+D:\login layer\Data\bin\Debug\Data.pdb
+D:\login layer\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\login layer\Data\obj\Debug\Data.dll
+D:\login layer\Data\obj\Debug\Data.pdb
+D:\login layer\Data\bin\Debug\common.dll
+D:\login layer\Data\bin\Debug\common.pdb
