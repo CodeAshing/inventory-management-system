@@ -226,9 +226,14 @@ namespace frontend.Forms
         private void pricetb_TextChanged(object sender, EventArgs e)
         {
         }
-
+		void Print()
+		{
+		}
+		
         private void submitBT_Click(object sender, EventArgs e)
         {
+			//print form
+			Print();
             //installation page add new
 
             if (pricetb.Text != "")
@@ -499,5 +504,10 @@ namespace frontend.Forms
                 e.Handled = true;
             }
         }
-    }
+
+		public void nametb_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+	}
 }

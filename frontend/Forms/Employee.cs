@@ -122,6 +122,8 @@ namespace frontend.Forms
 
         private void submitBT_Click(object sender, EventArgs e)
         {
+
+	
             if(basicTB.Text=="")
             {
                 basicTB.Text = "0";

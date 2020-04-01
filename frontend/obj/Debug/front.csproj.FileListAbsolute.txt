@@ -27,3 +27,43 @@ D:\login layer\frontend\obj\Debug\ar-SA\frontend.resources.dll
 D:\login layer\frontend\obj\Debug\frontend.Forms.PayTerm_M_.resources
 D:\login layer\frontend\obj\Debug\frontend.Forms.Employee.resources
 D:\login layer\frontend\obj\Debug\frontend.Forms.list.resources
+D:\InventoryMS\frontend\bin\Debug\frontend.exe.config
+D:\InventoryMS\frontend\bin\Debug\frontend.exe
+D:\InventoryMS\frontend\bin\Debug\frontend.pdb
+D:\InventoryMS\frontend\bin\Debug\ar-SA\frontend.resources.dll
+D:\InventoryMS\frontend\bin\Debug\common.dll
+D:\InventoryMS\frontend\bin\Debug\Data.dll
+D:\InventoryMS\frontend\bin\Debug\Domain.dll
+D:\InventoryMS\frontend\bin\Debug\common.pdb
+D:\InventoryMS\frontend\bin\Debug\Data.pdb
+D:\InventoryMS\frontend\bin\Debug\Domain.pdb
+D:\InventoryMS\frontend\obj\Debug\front.csprojAssemblyReference.cache
+D:\InventoryMS\frontend\obj\Debug\frontend.FormPrincipal.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.Employee.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.INSTALLATION.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.list.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.MAINTENANCE.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.pay_term.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.FPayment.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.PayTerm_M_.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.FormRecipt.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.SEARCH.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.FSpare.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.login.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Properties.Resources.resources
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.INSTALLATION.ar-SA.resources
+D:\InventoryMS\frontend\obj\Debug\front.csproj.GenerateResource.cache
+D:\InventoryMS\frontend\obj\Debug\front.csproj.CoreCompileInputs.cache
+D:\InventoryMS\frontend\obj\Debug\ar-SA\frontend.resources.dll
+D:\InventoryMS\frontend\obj\Debug\front.csproj.CopyComplete
+D:\InventoryMS\frontend\obj\Debug\frontend.exe
+D:\InventoryMS\frontend\obj\Debug\frontend.pdb
+D:\InventoryMS\frontend\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\InventoryMS\frontend\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\InventoryMS\frontend\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\InventoryMS\frontend\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\InventoryMS\frontend\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\InventoryMS\frontend\obj\Debug\RdlCompile.cache
+D:\InventoryMS\frontend\obj\Debug\RdlCompile.compiled
+D:\InventoryMS\frontend\obj\Debug\frontend.Forms.print.installationFP.resources
+D:\InventoryMS\frontend\bin\Debug\Microsoft.ReportViewer.WinForms.dll

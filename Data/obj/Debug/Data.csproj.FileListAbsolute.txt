@@ -5,3 +5,13 @@ D:\login layer\Data\obj\Debug\Data.dll
 D:\login layer\Data\obj\Debug\Data.pdb
 D:\login layer\Data\bin\Debug\common.dll
 D:\login layer\Data\bin\Debug\common.pdb
+D:\InventoryMS\Data\bin\Debug\Data.dll
+D:\InventoryMS\Data\bin\Debug\Data.pdb
+D:\InventoryMS\Data\bin\Debug\common.dll
+D:\InventoryMS\Data\bin\Debug\common.pdb
+D:\InventoryMS\Data\obj\Debug\Data.csprojAssemblyReference.cache
+D:\InventoryMS\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\InventoryMS\Data\obj\Debug\Data.csproj.CopyComplete
+D:\InventoryMS\Data\obj\Debug\Data.dll
+D:\InventoryMS\Data\obj\Debug\Data.pdb
+D:\InventoryMS\Data\bin\Debug\Microsoft.ReportViewer.WinForms.dll

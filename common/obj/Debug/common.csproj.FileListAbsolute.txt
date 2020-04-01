@@ -3,3 +3,10 @@ D:\login layer\common\bin\Debug\common.pdb
 D:\login layer\common\obj\Debug\common.csprojResolveAssemblyReference.cache
 D:\login layer\common\obj\Debug\common.dll
 D:\login layer\common\obj\Debug\common.pdb
+D:\InventoryMS\common\bin\Debug\common.dll
+D:\InventoryMS\common\bin\Debug\common.pdb
+D:\InventoryMS\common\obj\Debug\common.csproj.CoreCompileInputs.cache
+D:\InventoryMS\common\obj\Debug\common.dll
+D:\InventoryMS\common\obj\Debug\common.pdb
+D:\InventoryMS\common\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\InventoryMS\common\obj\Debug\common.csproj.CopyComplete
