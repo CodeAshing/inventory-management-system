@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace frontend.Forms.print
+namespace print
 {
-	public partial class installationFP : Form
-	{
-		public installationFP()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class ins : Form
+    {
+        public ins()
+        {
+            InitializeComponent();
+        }
+    }
 }

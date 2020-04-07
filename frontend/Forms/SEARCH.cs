@@ -615,5 +615,39 @@ namespace frontend.Forms
         {
 
         }
+
+        private void endDTP_ValueChanged(object sender, EventArgs e)
+        {
+            SqlCommand cmd;
+            if (PRS_catCB.Text == "موظف")
+            {
+
+                cmd = new SqlCommand("select  * from موظف where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ_الولادة=N'" + prs_DateTP.Text + "' ", con);
+            }
+            else
+            {
+                cmd = new SqlCommand("select  * from payment where الفئة=N'" + PRS_catCB.Text + "' and  ااسم_العميل =N'" + PRS_NCB.Text + "'and  تاريخ>=N'" + prs_DateTP.Text + "', تاريخ<=N'" + endDTP.Text + "' ", con);
+            }
+
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                SqlDataAdapter da;
+                da = new SqlDataAdapter(cmd);
+                DataTable tb = new DataTable();
+                da.Fill(tb);
+                dataGridView1.DataSource = tb;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+
+                con.Close();
+            }
+        }
     }
 }

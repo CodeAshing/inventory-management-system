@@ -150,11 +150,16 @@ namespace frontend.Forms
                 con.Close();
             }
         }
+        void Print()
+        {
+            print.MaintanPrintForm f = new print.MaintanPrintForm(this);
+            f.Show();
+        }
         private void submitBT_Click(object sender, EventArgs e)
         {
 
-			//print form
-			
+            //print form
+            Print();
 
 
             if (priceTB.Text != "")

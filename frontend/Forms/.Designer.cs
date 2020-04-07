@@ -65,7 +65,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 18F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(739, 23);
@@ -86,7 +86,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(760, 273);
@@ -98,7 +98,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(738, 207);
@@ -122,7 +122,7 @@
             // label12
             // 
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label12.Location = new System.Drawing.Point(738, 88);
@@ -243,7 +243,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(739, 148);
@@ -310,21 +310,20 @@
         }
 
         #endregion
-
-        private ChreneLib.Controls.TextBoxes.CTextBox nameTB;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTP;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox categoryCB;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox qtyCB;
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.Button update;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox listCB;
         private System.Windows.Forms.Button button3;
+        public ChreneLib.Controls.TextBoxes.CTextBox nameTB;
+        public System.Windows.Forms.DateTimePicker dateTP;
+        public System.Windows.Forms.ComboBox categoryCB;
+        public System.Windows.Forms.ComboBox qtyCB;
+        public System.Windows.Forms.ComboBox listCB;
     }
 }

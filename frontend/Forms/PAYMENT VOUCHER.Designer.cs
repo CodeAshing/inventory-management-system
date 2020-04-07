@@ -62,7 +62,7 @@
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label7.Location = new System.Drawing.Point(734, 260);
@@ -107,7 +107,7 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label6.Location = new System.Drawing.Point(198, 49);
@@ -132,7 +132,7 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label5.Location = new System.Drawing.Point(470, 164);
@@ -157,7 +157,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label3.Location = new System.Drawing.Point(734, 161);
@@ -182,7 +182,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label2.Location = new System.Drawing.Point(189, 166);
@@ -202,7 +202,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label4.Location = new System.Drawing.Point(475, 42);
@@ -226,7 +226,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 15F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.label1.Location = new System.Drawing.Point(734, 31);
@@ -277,22 +277,21 @@
         }
 
         #endregion
-
-        private ChreneLib.Controls.TextBoxes.CTextBox discription;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button submitBT;
-        private System.Windows.Forms.ComboBox category;
         private System.Windows.Forms.Label label6;
-        private ChreneLib.Controls.TextBoxes.CTextBox priceTb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox amountypeCB;
         private System.Windows.Forms.Label label3;
-        private ChreneLib.Controls.TextBoxes.CTextBox priceIWCB;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTP;
         private System.Windows.Forms.Label label4;
-        private ChreneLib.Controls.TextBoxes.CTextBox nametb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox reciveCheck;
+        public ChreneLib.Controls.TextBoxes.CTextBox discription;
+        public System.Windows.Forms.ComboBox category;
+        public ChreneLib.Controls.TextBoxes.CTextBox priceTb;
+        public System.Windows.Forms.ComboBox amountypeCB;
+        public ChreneLib.Controls.TextBoxes.CTextBox priceIWCB;
+        public System.Windows.Forms.DateTimePicker dateTP;
+        public ChreneLib.Controls.TextBoxes.CTextBox nametb;
     }
 }

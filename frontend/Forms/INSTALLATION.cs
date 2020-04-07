@@ -226,10 +226,12 @@ namespace frontend.Forms
         private void pricetb_TextChanged(object sender, EventArgs e)
         {
         }
+        
 		void Print()
 		{
-		}
-		
+            print.instalPrintForm f = new print.instalPrintForm(this);
+            f.Show();
+        }
         private void submitBT_Click(object sender, EventArgs e)
         {
 			//print form

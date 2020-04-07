@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.searPAY = new System.Windows.Forms.Button();
             this.searREC = new System.Windows.Forms.Button();
             this.searEMP = new System.Windows.Forms.Button();
@@ -47,6 +47,8 @@
             this.prs_DateTP = new System.Windows.Forms.DateTimePicker();
             this.PRS_catCB = new System.Windows.Forms.ComboBox();
             this.PRS_NCB = new System.Windows.Forms.ComboBox();
+            this.endDTP = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,31 +170,31 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle17;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("MS Reference Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.Location = new System.Drawing.Point(5, 131);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.RowHeadersWidth = 22;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowTemplate.Height = 28;
             this.dataGridView1.Size = new System.Drawing.Size(800, 334);
             this.dataGridView1.TabIndex = 74;
@@ -200,10 +202,10 @@
             // PRS_date
             // 
             this.PRS_date.BackColor = System.Drawing.SystemColors.Control;
-            this.PRS_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PRS_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PRS_date.ForeColor = System.Drawing.Color.Black;
             this.PRS_date.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PRS_date.Location = new System.Drawing.Point(271, 66);
+            this.PRS_date.Location = new System.Drawing.Point(374, 67);
             this.PRS_date.Name = "PRS_date";
             this.PRS_date.Size = new System.Drawing.Size(91, 48);
             this.PRS_date.TabIndex = 76;
@@ -212,10 +214,10 @@
             // PRS_name
             // 
             this.PRS_name.BackColor = System.Drawing.SystemColors.Control;
-            this.PRS_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PRS_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PRS_name.ForeColor = System.Drawing.Color.Black;
             this.PRS_name.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PRS_name.Location = new System.Drawing.Point(519, 67);
+            this.PRS_name.Location = new System.Drawing.Point(564, 67);
             this.PRS_name.Name = "PRS_name";
             this.PRS_name.Size = new System.Drawing.Size(71, 46);
             this.PRS_name.TabIndex = 77;
@@ -224,10 +226,10 @@
             // PRS_cat
             // 
             this.PRS_cat.BackColor = System.Drawing.SystemColors.Control;
-            this.PRS_cat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PRS_cat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PRS_cat.ForeColor = System.Drawing.Color.Black;
             this.PRS_cat.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PRS_cat.Location = new System.Drawing.Point(723, 64);
+            this.PRS_cat.Location = new System.Drawing.Point(750, 67);
             this.PRS_cat.Name = "PRS_cat";
             this.PRS_cat.Size = new System.Drawing.Size(71, 38);
             this.PRS_cat.TabIndex = 79;
@@ -254,16 +256,16 @@
             // 
             // prs_DateTP
             // 
-            this.prs_DateTP.Location = new System.Drawing.Point(65, 68);
+            this.prs_DateTP.Location = new System.Drawing.Point(233, 69);
             this.prs_DateTP.Name = "prs_DateTP";
-            this.prs_DateTP.Size = new System.Drawing.Size(200, 26);
+            this.prs_DateTP.Size = new System.Drawing.Size(135, 26);
             this.prs_DateTP.TabIndex = 82;
             this.prs_DateTP.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged_1);
             // 
             // PRS_catCB
             // 
             this.PRS_catCB.FormattingEnabled = true;
-            this.PRS_catCB.Location = new System.Drawing.Point(596, 64);
+            this.PRS_catCB.Location = new System.Drawing.Point(623, 67);
             this.PRS_catCB.Name = "PRS_catCB";
             this.PRS_catCB.Size = new System.Drawing.Size(121, 28);
             this.PRS_catCB.TabIndex = 84;
@@ -274,12 +276,32 @@
             this.PRS_NCB.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.PRS_NCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.PRS_NCB.FormattingEnabled = true;
-            this.PRS_NCB.Location = new System.Drawing.Point(329, 66);
+            this.PRS_NCB.Location = new System.Drawing.Point(444, 67);
             this.PRS_NCB.Name = "PRS_NCB";
             this.PRS_NCB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.PRS_NCB.Size = new System.Drawing.Size(184, 28);
+            this.PRS_NCB.Size = new System.Drawing.Size(110, 28);
             this.PRS_NCB.TabIndex = 85;
             this.PRS_NCB.SelectedIndexChanged += new System.EventHandler(this.namepayCB_SelectedIndexChanged);
+            // 
+            // endDTP
+            // 
+            this.endDTP.Location = new System.Drawing.Point(17, 69);
+            this.endDTP.Name = "endDTP";
+            this.endDTP.Size = new System.Drawing.Size(135, 26);
+            this.endDTP.TabIndex = 87;
+            this.endDTP.ValueChanged += new System.EventHandler(this.endDTP_ValueChanged);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label1.Location = new System.Drawing.Point(158, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 37);
+            this.label1.TabIndex = 86;
+            this.label1.Text = ":تاريخ الانتهاء";
             // 
             // SEARCH
             // 
@@ -287,6 +309,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(812, 520);
+            this.Controls.Add(this.endDTP);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.PRS_NCB);
             this.Controls.Add(this.PRS_catCB);
             this.Controls.Add(this.prs_DateTP);
@@ -327,5 +351,7 @@
         private System.Windows.Forms.DateTimePicker prs_DateTP;
         private System.Windows.Forms.ComboBox PRS_catCB;
         private System.Windows.Forms.ComboBox PRS_NCB;
+        private System.Windows.Forms.DateTimePicker endDTP;
+        private System.Windows.Forms.Label label1;
     }
 }

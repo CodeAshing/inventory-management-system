@@ -192,9 +192,14 @@ namespace frontend.Forms
             }
             formload();
         }
-
+        void Print()
+        {
+            print.sparePrintForm f = new print.sparePrintForm(this);
+            f.Show();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
+            Print();
             cmd = new SqlCommand("INSERT INTO  قطع_غيار  (ااسم_العميل, الفئة ,  اسم_العنصر , سعر_السلعة , كمية , مجموع , تاريخ)  SELECT ااسم_العميل , الفئة ,  اسم_العنصر , سعر_السلعة , كمية , مجموع , تاريخ  FROM Spare", con);
             try
             {

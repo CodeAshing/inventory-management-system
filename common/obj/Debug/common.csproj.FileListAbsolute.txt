@@ -10,3 +10,9 @@ D:\InventoryMS\common\obj\Debug\common.dll
 D:\InventoryMS\common\obj\Debug\common.pdb
 D:\InventoryMS\common\bin\Debug\Microsoft.ReportViewer.WinForms.dll
 D:\InventoryMS\common\obj\Debug\common.csproj.CopyComplete
+E:\inventory-management-system\common\bin\Debug\common.dll
+E:\inventory-management-system\common\bin\Debug\common.pdb
+E:\inventory-management-system\common\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\inventory-management-system\common\obj\Debug\common.csprojResolveAssemblyReference.cache
+E:\inventory-management-system\common\obj\Debug\common.dll
+E:\inventory-management-system\common\obj\Debug\common.pdb

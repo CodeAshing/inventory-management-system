@@ -50,10 +50,16 @@ namespace frontend.Forms
         {
             LoadTheme();
         }
+        void Print()
+        {
+            print.ReciptPrintForm f = new print.ReciptPrintForm(this);
+            f.Show();
+        }
 
-        
         private void submitBT_Click(object sender, EventArgs e)
         {
+            Print();
+
             if (priceTb.Text != "")
             {
 
@@ -92,6 +98,11 @@ namespace frontend.Forms
             {
                 e.Handled = true;
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

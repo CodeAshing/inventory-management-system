@@ -35,6 +35,7 @@
     <Reference Include="ChreneLib">
       <HintPath>C:\Users\hp\Desktop\ChreneLib.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
@@ -103,12 +104,6 @@
     <Compile Include="Forms\PayTerm%28M%29.Designer.cs">
       <DependentUpon>PayTerm%28M%29.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\print\installationFP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\print\installationFP.Designer.cs">
-      <DependentUpon>installationFP.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\RECIPT VOUCHER.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +134,66 @@
     </Compile>
     <Compile Include="login.designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\instalPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\instalPrintForm.Designer.cs">
+      <DependentUpon>instalPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\instalPrintReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>instalPrintReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="print\MaintanPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\MaintanPrintForm.Designer.cs">
+      <DependentUpon>MaintanPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\MaintanPrintReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaintanPrintReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="print\payPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\payPrintForm.Designer.cs">
+      <DependentUpon>payPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\payPrintReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>payPrintReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="print\ReciptPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\ReciptPrintForm.Designer.cs">
+      <DependentUpon>ReciptPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\ReciptPrintReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReciptPrintReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="print\sparePrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\sparePrintForm.Designer.cs">
+      <DependentUpon>sparePrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\sparePrintReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sparePrintReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -171,10 +226,6 @@
     <EmbeddedResource Include="Forms\PayTerm%28M%29.resx">
       <DependentUpon>PayTerm%28M%29.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\print\installatinP.rdlc" />
-    <EmbeddedResource Include="Forms\print\installationFP.resx">
-      <DependentUpon>installationFP.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\RECIPT VOUCHER.resx">
       <DependentUpon>RECIPT VOUCHER.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +237,41 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\instalPrintForm.resx">
+      <DependentUpon>instalPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\instalPrintReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>instalPrintReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\MaintanPrintForm.resx">
+      <DependentUpon>MaintanPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\MaintanPrintReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MaintanPrintReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\payPrintForm.resx">
+      <DependentUpon>payPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\payPrintReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>payPrintReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\ReciptPrintForm.resx">
+      <DependentUpon>ReciptPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\ReciptPrintReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReciptPrintReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\sparePrintForm.resx">
+      <DependentUpon>sparePrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\sparePrintReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sparePrintReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -396,5 +482,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

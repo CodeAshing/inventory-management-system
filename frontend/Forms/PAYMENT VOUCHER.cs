@@ -56,9 +56,14 @@ namespace frontend.Forms
         {
 
         }
-
+        void Print()
+        {
+            print.payPrintForm f = new print.payPrintForm(this);
+            f.Show();
+        }
         private void submitBT_Click_1(object sender, EventArgs e)
         {
+            Print();
             if (priceTb.Text != "")
             {
                 if (reciveCheck.CheckState == CheckState.Unchecked)
