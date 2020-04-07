@@ -58,10 +58,10 @@ namespace frontend.Forms
 
         private void submitBT_Click(object sender, EventArgs e)
         {
-            Print();
 
             if (priceTb.Text != "")
             {
+                Print();
 
 
                 cmd = new SqlCommand("insert into recived values(N'" + nametb.Text + "',N'" + dateTP.Text + "',N'" + RfromCB.Text + "',N'" + categoryCB.Text + "','" + int.Parse(priceTb.Text) + "',N'" + priceIWCB.Text + "',N'" + discription.Text + "')", con);

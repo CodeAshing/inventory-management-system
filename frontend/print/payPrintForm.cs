@@ -22,6 +22,12 @@ namespace frontend.print
         {
             payPrintReport p = new payPrintReport();
             p.SetParameterValue("Name", pay.nametb.Text);
+            p.SetParameterValue("Amount", pay.priceTb.Text);
+            p.SetParameterValue("amountIW", pay.priceIWCB.Text);
+            p.SetParameterValue("cashCheque", pay.amountypeCB.Text);
+            p.SetParameterValue("description", pay.discription.Text);
+            p.SetParameterValue("Date", pay.dateTP.Text);
+            p.SetParameterValue("Paidto", pay.category.Text);
             crystalReportViewer1.ReportSource = p;
             crystalReportViewer1.Refresh();
 
