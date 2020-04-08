@@ -60,7 +60,7 @@ namespace frontend.Forms
         {
             discriptionTB.Text = null;
             dateTp.Text = null;
-            perCB.Text = null;
+            perCB.Text = "0";
         }
         void formloadN()
         {
@@ -122,11 +122,11 @@ namespace frontend.Forms
         }
         private void button3_Click(object sender, EventArgs e)
         {
-            Print();
             if (ma.flag_new == "yes")
             {
                 if (id != 0)
                 {
+                    Print();
                     cmd = new SqlCommand("UPDATE  MCPAY SET مدفوع=N'نعم' WHERE رقم_الهوية=" + id, con);
                     try
                     {
@@ -157,6 +157,7 @@ namespace frontend.Forms
             {
                 if (id != 0)
                 {
+                    Print();
                     cmd = new SqlCommand("UPDATE  MPAY SET مدفوع=N'نعم' WHERE رقم_الهوية=" + id, con);
                     try
                     {

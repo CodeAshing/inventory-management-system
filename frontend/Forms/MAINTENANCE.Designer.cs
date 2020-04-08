@@ -673,6 +673,9 @@
             this.CategoryCB.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.CategoryCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CategoryCB.FormattingEnabled = true;
+            this.CategoryCB.Items.AddRange(new object[] {
+            "جديد",
+            "ضمان"});
             this.CategoryCB.Location = new System.Drawing.Point(543, 84);
             this.CategoryCB.Name = "CategoryCB";
             this.CategoryCB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;

@@ -158,20 +158,18 @@ namespace frontend.Forms
         private void submitBT_Click(object sender, EventArgs e)
         {
 
-            //print form
-            Print();
 
 
             if (priceTB.Text != "")
             {
+                //print form
+                Print();
 
                 cmd = new SqlCommand("insert into صيانة values(N'" + nameTB.Text + "',N'" + CategoryCB.Text + "',N'" + PhoneTB.Text + "',N'" + dateSTP.Text+ "',N'" + dateETP.Text + "',N'" + floorTB.Text + "',N'" + stopCB.Text + "',N'" + DeliveryTB.Text + "',N'" + placetb.Text + "','" + int.Parse(priceTB.Text )+ "',N'" + noteCB.Text + "',N'" + FlooringTB.Text + "',N'" + discriptionTB.Text + "')", con);
                 try
                 {
                     con.Open();
                     cmd.ExecuteNonQuery();
-
-                    MessageBox.Show("Record Successfully Inserted", "INFORMATION", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     clearboxes();
                 }
                 catch (Exception ex)

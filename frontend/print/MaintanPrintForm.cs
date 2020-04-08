@@ -58,6 +58,7 @@ namespace frontend.print
             crystalReportViewer1.ReportSource = M;
             crystalReportViewer1.Refresh();
 
+            con.Close();
         }
 
         

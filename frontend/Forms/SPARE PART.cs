@@ -74,7 +74,7 @@ namespace frontend.Forms
         void formload()
         {
 
-            SqlCommand cmd = new SqlCommand("select * from Spare union all	select ' ', '', N'المبلغ الإجمالي', '', sum(cast(سعر_السلعة as int)), '', sum(cast(مجموع as int)), '' from Spare", con);
+            SqlCommand cmd = new SqlCommand("select * from Spare union all	select ' ', '', N'المبلغ الإجمالي', '', sum(cast(سعر_السلعة as int)), '', sum(cast(مجموع as int)), '' from Spare ORDER BY رقم_العقد DESC", con);
             try
             {
                 con.Open();
@@ -200,13 +200,11 @@ namespace frontend.Forms
         private void button1_Click(object sender, EventArgs e)
         {
             Print();
-            cmd = new SqlCommand("INSERT INTO  قطع_غيار  (ااسم_العميل, الفئة ,  اسم_العنصر , سعر_السلعة , كمية , مجموع , تاريخ)  SELECT ااسم_العميل , الفئة ,  اسم_العنصر , سعر_السلعة , كمية , مجموع , تاريخ  FROM Spare", con);
+            cmd = new SqlCommand("INSERT INTO  قطع_غيار  (ااسم_العميل, الفئة ,  اسم_العنصر , سعر_السلعة , كمية , مجموع , تاريخ)  SELECT ااسم_العميل , الفئة ,  اسم_العنصر , سعر_السلعة , كمية , مجموع , تاريخ  FROM Spare DBCC CHECKIDENT('Spare', RESEED, 0)", con);
             try
             {
                 con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Record submitted successfully ", "INFORMATION", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-
+                cmd.ExecuteNonQuery();                
             }
             catch (Exception ex)
             {

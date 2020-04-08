@@ -13,6 +13,7 @@ create table Spare (
     ); 
 
 
+
 	create table قطع_غيار (
     رقم_العقد int IDENTITY(1,1) primary key,
     ااسم_العميل nvarchar (100)  collate arabic_ci_ai ,

@@ -374,5 +374,10 @@ namespace frontend
 
             OpenChildForm(new Forms.Employee(), sender);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

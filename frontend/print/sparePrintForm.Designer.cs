@@ -39,7 +39,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1093, 686);
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1674, 904);
             this.crystalReportViewer1.TabIndex = 0;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
             // 
@@ -47,7 +47,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1093, 686);
+            this.ClientSize = new System.Drawing.Size(1674, 904);
             this.Controls.Add(this.crystalReportViewer1);
             this.Name = "sparePrintForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

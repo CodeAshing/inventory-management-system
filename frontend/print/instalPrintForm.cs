@@ -61,6 +61,7 @@ namespace frontend.print
             crystalReportViewer1.ReportSource = p;
             crystalReportViewer1.Refresh();
 
+            con.Close();
         }
 
         private void instalPrintForm_Load(object sender, EventArgs e)

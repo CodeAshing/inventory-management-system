@@ -45,7 +45,7 @@ namespace frontend.Forms
         void formload()
         {
 
-            SqlCommand cmd = new SqlCommand("select * from قائمة", con);
+            SqlCommand cmd = new SqlCommand("select * from قائمة ORDER BY رقم_العقد DESC", con);
             try
             {
                 con.Open();

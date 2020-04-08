@@ -29,7 +29,7 @@ namespace frontend.print
             pr.SetParameterValue("Date", p.dateTp.Text);
             crystalReportViewer1.ReportSource = pr;
             crystalReportViewer1.Refresh();
-
+            
         }
         private void mainPayForm_Load(object sender, EventArgs e)
         {

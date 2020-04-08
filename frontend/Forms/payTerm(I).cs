@@ -182,7 +182,7 @@ namespace frontend.Forms
          void clearboxes()
         {
             discriptionTB.Text = null;
-            perCB.Text = null;
+            perCB.Text = "0";
             dateTp.Text = null;
         }
 
@@ -198,11 +198,11 @@ namespace frontend.Forms
         int id=0;
         private void button3_Click(object sender, EventArgs e)
         {
-            Print();
             if (ins.flag_new == "yes")
             {
                 if (id != 0)
                 {
+                    Print();
                     cmd = new SqlCommand("UPDATE  ICPAY SET مدفوع=N'نعم' WHERE رقم_الهوية=" + id, con);
                     try
                     {
@@ -232,7 +232,8 @@ namespace frontend.Forms
             else
             {
                 if (id != 0)
-                {                    
+                {
+                    Print();
                     cmd = new SqlCommand("UPDATE  IPAY SET مدفوع=N'نعم' WHERE رقم_الهوية=" + id, con);
                     try
                     {

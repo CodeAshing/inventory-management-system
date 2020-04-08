@@ -41,28 +41,35 @@
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.LBtittle = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.menupan = new System.Windows.Forms.Panel();
-            this.employbt = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Installationbt = new System.Windows.Forms.Button();
+            this.mantainbt = new System.Windows.Forms.Button();
+            this.sparebt = new System.Windows.Forms.Button();
+            this.reciptbt = new System.Windows.Forms.Button();
+            this.paybt = new System.Windows.Forms.Button();
+            this.searchbt = new System.Windows.Forms.Button();
+            this.paneldetail = new System.Windows.Forms.Panel();
+            this.logoutbt = new System.Windows.Forms.Button();
+            this.position = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panellogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.paneldetail = new System.Windows.Forms.Panel();
-            this.name = new System.Windows.Forms.Label();
-            this.position = new System.Windows.Forms.Label();
-            this.logoutbt = new System.Windows.Forms.Button();
-            this.searchbt = new System.Windows.Forms.Button();
-            this.paybt = new System.Windows.Forms.Button();
-            this.reciptbt = new System.Windows.Forms.Button();
-            this.sparebt = new System.Windows.Forms.Button();
-            this.mantainbt = new System.Windows.Forms.Button();
-            this.Installationbt = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.employbt = new System.Windows.Forms.Button();
+            this.menupan = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panelcontrol.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelbar.SuspendLayout();
-            this.menupan.SuspendLayout();
-            this.panellogo.SuspendLayout();
             this.paneldetail.SuspendLayout();
+            this.panellogo.SuspendLayout();
+            this.menupan.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelcontrol
@@ -220,9 +227,202 @@
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Installationbt
+            // 
+            this.Installationbt.FlatAppearance.BorderSize = 0;
+            this.Installationbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Installationbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Installationbt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Installationbt.Location = new System.Drawing.Point(3, 202);
+            this.Installationbt.Name = "Installationbt";
+            this.Installationbt.Size = new System.Drawing.Size(295, 70);
+            this.Installationbt.TabIndex = 3;
+            this.Installationbt.Text = "التركيب";
+            this.Installationbt.UseVisualStyleBackColor = true;
+            this.Installationbt.Click += new System.EventHandler(this.Installationbt_Click);
+            // 
+            // mantainbt
+            // 
+            this.mantainbt.FlatAppearance.BorderSize = 0;
+            this.mantainbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mantainbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mantainbt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.mantainbt.Location = new System.Drawing.Point(3, 304);
+            this.mantainbt.Name = "mantainbt";
+            this.mantainbt.Size = new System.Drawing.Size(295, 70);
+            this.mantainbt.TabIndex = 8;
+            this.mantainbt.Text = "صيانة ";
+            this.mantainbt.UseVisualStyleBackColor = true;
+            this.mantainbt.Click += new System.EventHandler(this.mantainbt_Click);
+            // 
+            // sparebt
+            // 
+            this.sparebt.FlatAppearance.BorderSize = 0;
+            this.sparebt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sparebt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sparebt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.sparebt.Location = new System.Drawing.Point(3, 396);
+            this.sparebt.Name = "sparebt";
+            this.sparebt.Size = new System.Drawing.Size(295, 70);
+            this.sparebt.TabIndex = 9;
+            this.sparebt.Text = "قطع غيار ";
+            this.sparebt.UseVisualStyleBackColor = true;
+            this.sparebt.Click += new System.EventHandler(this.sparebt_Click);
+            // 
+            // reciptbt
+            // 
+            this.reciptbt.FlatAppearance.BorderSize = 0;
+            this.reciptbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reciptbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reciptbt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.reciptbt.Location = new System.Drawing.Point(3, 597);
+            this.reciptbt.Name = "reciptbt";
+            this.reciptbt.Size = new System.Drawing.Size(295, 70);
+            this.reciptbt.TabIndex = 10;
+            this.reciptbt.Text = "سند القبض";
+            this.reciptbt.UseVisualStyleBackColor = true;
+            this.reciptbt.Click += new System.EventHandler(this.reciptbt_Click);
+            // 
+            // paybt
+            // 
+            this.paybt.FlatAppearance.BorderSize = 0;
+            this.paybt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.paybt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paybt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.paybt.Location = new System.Drawing.Point(3, 699);
+            this.paybt.Name = "paybt";
+            this.paybt.Size = new System.Drawing.Size(295, 70);
+            this.paybt.TabIndex = 11;
+            this.paybt.Text = "دفع القسيمة";
+            this.paybt.UseVisualStyleBackColor = true;
+            this.paybt.Click += new System.EventHandler(this.paybt_Click);
+            // 
+            // searchbt
+            // 
+            this.searchbt.FlatAppearance.BorderSize = 0;
+            this.searchbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.searchbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchbt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.searchbt.Location = new System.Drawing.Point(3, 787);
+            this.searchbt.Name = "searchbt";
+            this.searchbt.Size = new System.Drawing.Size(295, 70);
+            this.searchbt.TabIndex = 12;
+            this.searchbt.Text = "بحث";
+            this.searchbt.UseVisualStyleBackColor = true;
+            this.searchbt.Click += new System.EventHandler(this.searchbt_Click);
+            // 
+            // paneldetail
+            // 
+            this.paneldetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.paneldetail.Controls.Add(this.name);
+            this.paneldetail.Controls.Add(this.position);
+            this.paneldetail.Controls.Add(this.logoutbt);
+            this.paneldetail.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.paneldetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paneldetail.Location = new System.Drawing.Point(0, 888);
+            this.paneldetail.Name = "paneldetail";
+            this.paneldetail.Size = new System.Drawing.Size(298, 112);
+            this.paneldetail.TabIndex = 2;
+            this.paneldetail.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // logoutbt
+            // 
+            this.logoutbt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.logoutbt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoutbt.BackgroundImage")));
+            this.logoutbt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoutbt.Dock = System.Windows.Forms.DockStyle.Right;
+            this.logoutbt.FlatAppearance.BorderSize = 0;
+            this.logoutbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbt.Location = new System.Drawing.Point(201, 0);
+            this.logoutbt.Name = "logoutbt";
+            this.logoutbt.Size = new System.Drawing.Size(97, 112);
+            this.logoutbt.TabIndex = 4;
+            this.logoutbt.UseVisualStyleBackColor = false;
+            this.logoutbt.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // position
+            // 
+            this.position.AutoSize = true;
+            this.position.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.position.ForeColor = System.Drawing.Color.Gainsboro;
+            this.position.Location = new System.Drawing.Point(6, 48);
+            this.position.Name = "position";
+            this.position.Size = new System.Drawing.Size(51, 20);
+            this.position.TabIndex = 5;
+            this.position.Text = "label1";
+            this.position.Click += new System.EventHandler(this.position_Click);
+            // 
+            // name
+            // 
+            this.name.AutoSize = true;
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.ForeColor = System.Drawing.Color.Gainsboro;
+            this.name.Location = new System.Drawing.Point(6, 11);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(51, 20);
+            this.name.TabIndex = 6;
+            this.name.Text = "label2";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(298, 11);
+            this.panel1.TabIndex = 3;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            // 
+            // panellogo
+            // 
+            this.panellogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panellogo.Controls.Add(this.label1);
+            this.panellogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panellogo.Location = new System.Drawing.Point(0, 11);
+            this.panellogo.Name = "panellogo";
+            this.panellogo.Size = new System.Drawing.Size(298, 128);
+            this.panellogo.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(54, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(194, 64);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "RAUGI \r\n    ELEVATOR";
+            // 
+            // employbt
+            // 
+            this.employbt.FlatAppearance.BorderSize = 0;
+            this.employbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.employbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employbt.ForeColor = System.Drawing.Color.Gainsboro;
+            this.employbt.Location = new System.Drawing.Point(3, 495);
+            this.employbt.Name = "employbt";
+            this.employbt.Size = new System.Drawing.Size(295, 70);
+            this.employbt.TabIndex = 13;
+            this.employbt.Text = "موظف";
+            this.employbt.UseVisualStyleBackColor = true;
+            this.employbt.Click += new System.EventHandler(this.employbt_Click);
+            // 
             // menupan
             // 
             this.menupan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.menupan.Controls.Add(this.button9);
+            this.menupan.Controls.Add(this.button8);
+            this.menupan.Controls.Add(this.button7);
+            this.menupan.Controls.Add(this.button6);
+            this.menupan.Controls.Add(this.button5);
+            this.menupan.Controls.Add(this.button4);
+            this.menupan.Controls.Add(this.button2);
             this.menupan.Controls.Add(this.employbt);
             this.menupan.Controls.Add(this.panellogo);
             this.menupan.Controls.Add(this.panel1);
@@ -241,191 +441,131 @@
             this.menupan.Paint += new System.Windows.Forms.PaintEventHandler(this.menupan_Paint);
             this.menupan.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menupan_MouseDown);
             // 
-            // employbt
+            // button2
             // 
-            this.employbt.FlatAppearance.BorderSize = 0;
-            this.employbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.employbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employbt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.employbt.Location = new System.Drawing.Point(3, 495);
-            this.employbt.Name = "employbt";
-            this.employbt.Size = new System.Drawing.Size(295, 70);
-            this.employbt.TabIndex = 13;
-            this.employbt.Text = "موظف";
-            this.employbt.UseVisualStyleBackColor = true;
-            this.employbt.Click += new System.EventHandler(this.employbt_Click);
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Location = new System.Drawing.Point(230, 202);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(68, 70);
+            this.button2.TabIndex = 14;
+            this.button2.UseVisualStyleBackColor = false;
             // 
-            // panellogo
+            // button4
             // 
-            this.panellogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panellogo.Controls.Add(this.label1);
-            this.panellogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panellogo.Location = new System.Drawing.Point(0, 11);
-            this.panellogo.Name = "panellogo";
-            this.panellogo.Size = new System.Drawing.Size(298, 128);
-            this.panellogo.TabIndex = 3;
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.Transparent;
+            this.button4.Location = new System.Drawing.Point(230, 304);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(68, 70);
+            this.button4.TabIndex = 15;
+            this.button4.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // button5
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 14F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(54, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 70);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "RAUGI \r\n    ELEVATOR";
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.Transparent;
+            this.button5.Location = new System.Drawing.Point(230, 396);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(68, 70);
+            this.button5.TabIndex = 16;
+            this.button5.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // button6
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(298, 11);
-            this.panel1.TabIndex = 3;
-            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.button6.BackColor = System.Drawing.Color.Transparent;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Transparent;
+            this.button6.Location = new System.Drawing.Point(248, 495);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(50, 70);
+            this.button6.TabIndex = 17;
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // paneldetail
+            // button7
             // 
-            this.paneldetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.paneldetail.Controls.Add(this.name);
-            this.paneldetail.Controls.Add(this.position);
-            this.paneldetail.Controls.Add(this.logoutbt);
-            this.paneldetail.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.paneldetail.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paneldetail.Location = new System.Drawing.Point(0, 888);
-            this.paneldetail.Name = "paneldetail";
-            this.paneldetail.Size = new System.Drawing.Size(298, 112);
-            this.paneldetail.TabIndex = 2;
-            this.paneldetail.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.button7.BackColor = System.Drawing.Color.Transparent;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Transparent;
+            this.button7.Location = new System.Drawing.Point(248, 787);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(50, 70);
+            this.button7.TabIndex = 18;
+            this.button7.UseVisualStyleBackColor = false;
             // 
-            // name
+            // button8
             // 
-            this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name.ForeColor = System.Drawing.Color.Gainsboro;
-            this.name.Location = new System.Drawing.Point(6, 11);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(59, 20);
-            this.name.TabIndex = 6;
-            this.name.Text = "label2";
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.Transparent;
+            this.button8.Location = new System.Drawing.Point(230, 699);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(68, 70);
+            this.button8.TabIndex = 19;
+            this.button8.UseVisualStyleBackColor = false;
             // 
-            // position
+            // button9
             // 
-            this.position.AutoSize = true;
-            this.position.Font = new System.Drawing.Font("MS Reference Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.position.ForeColor = System.Drawing.Color.Gainsboro;
-            this.position.Location = new System.Drawing.Point(6, 48);
-            this.position.Name = "position";
-            this.position.Size = new System.Drawing.Size(59, 20);
-            this.position.TabIndex = 5;
-            this.position.Text = "label1";
-            this.position.Click += new System.EventHandler(this.position_Click);
-            // 
-            // logoutbt
-            // 
-            this.logoutbt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.logoutbt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoutbt.BackgroundImage")));
-            this.logoutbt.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.logoutbt.Dock = System.Windows.Forms.DockStyle.Right;
-            this.logoutbt.FlatAppearance.BorderSize = 0;
-            this.logoutbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logoutbt.Location = new System.Drawing.Point(201, 0);
-            this.logoutbt.Name = "logoutbt";
-            this.logoutbt.Size = new System.Drawing.Size(97, 112);
-            this.logoutbt.TabIndex = 4;
-            this.logoutbt.UseVisualStyleBackColor = false;
-            this.logoutbt.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // searchbt
-            // 
-            this.searchbt.FlatAppearance.BorderSize = 0;
-            this.searchbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.searchbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchbt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.searchbt.Location = new System.Drawing.Point(3, 787);
-            this.searchbt.Name = "searchbt";
-            this.searchbt.Size = new System.Drawing.Size(295, 70);
-            this.searchbt.TabIndex = 12;
-            this.searchbt.Text = "بحث";
-            this.searchbt.UseVisualStyleBackColor = true;
-            this.searchbt.Click += new System.EventHandler(this.searchbt_Click);
-            // 
-            // paybt
-            // 
-            this.paybt.FlatAppearance.BorderSize = 0;
-            this.paybt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.paybt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.paybt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.paybt.Location = new System.Drawing.Point(3, 699);
-            this.paybt.Name = "paybt";
-            this.paybt.Size = new System.Drawing.Size(295, 70);
-            this.paybt.TabIndex = 11;
-            this.paybt.Text = "دفع القسيمة";
-            this.paybt.UseVisualStyleBackColor = true;
-            this.paybt.Click += new System.EventHandler(this.paybt_Click);
-            // 
-            // reciptbt
-            // 
-            this.reciptbt.FlatAppearance.BorderSize = 0;
-            this.reciptbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reciptbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reciptbt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.reciptbt.Location = new System.Drawing.Point(3, 597);
-            this.reciptbt.Name = "reciptbt";
-            this.reciptbt.Size = new System.Drawing.Size(295, 70);
-            this.reciptbt.TabIndex = 10;
-            this.reciptbt.Text = "سند القبض";
-            this.reciptbt.UseVisualStyleBackColor = true;
-            this.reciptbt.Click += new System.EventHandler(this.reciptbt_Click);
-            // 
-            // sparebt
-            // 
-            this.sparebt.FlatAppearance.BorderSize = 0;
-            this.sparebt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sparebt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sparebt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.sparebt.Location = new System.Drawing.Point(3, 396);
-            this.sparebt.Name = "sparebt";
-            this.sparebt.Size = new System.Drawing.Size(295, 70);
-            this.sparebt.TabIndex = 9;
-            this.sparebt.Text = "قطع غيار ";
-            this.sparebt.UseVisualStyleBackColor = true;
-            this.sparebt.Click += new System.EventHandler(this.sparebt_Click);
-            // 
-            // mantainbt
-            // 
-            this.mantainbt.FlatAppearance.BorderSize = 0;
-            this.mantainbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mantainbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mantainbt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.mantainbt.Location = new System.Drawing.Point(3, 304);
-            this.mantainbt.Name = "mantainbt";
-            this.mantainbt.Size = new System.Drawing.Size(295, 70);
-            this.mantainbt.TabIndex = 8;
-            this.mantainbt.Text = "صيانة ";
-            this.mantainbt.UseVisualStyleBackColor = true;
-            this.mantainbt.Click += new System.EventHandler(this.mantainbt_Click);
-            // 
-            // Installationbt
-            // 
-            this.Installationbt.FlatAppearance.BorderSize = 0;
-            this.Installationbt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Installationbt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Installationbt.ForeColor = System.Drawing.Color.Gainsboro;
-            this.Installationbt.Location = new System.Drawing.Point(3, 202);
-            this.Installationbt.Name = "Installationbt";
-            this.Installationbt.Size = new System.Drawing.Size(295, 70);
-            this.Installationbt.TabIndex = 3;
-            this.Installationbt.Text = "التركيب";
-            this.Installationbt.UseVisualStyleBackColor = true;
-            this.Installationbt.Click += new System.EventHandler(this.Installationbt_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.button9.BackColor = System.Drawing.Color.Transparent;
+            this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.Transparent;
+            this.button9.Location = new System.Drawing.Point(230, 597);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(68, 82);
+            this.button9.TabIndex = 20;
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // FormPrincipal
             // 
@@ -443,11 +583,11 @@
             this.panel3.ResumeLayout(false);
             this.panelbar.ResumeLayout(false);
             this.panelbar.PerformLayout();
-            this.menupan.ResumeLayout(false);
-            this.panellogo.ResumeLayout(false);
-            this.panellogo.PerformLayout();
             this.paneldetail.ResumeLayout(false);
             this.paneldetail.PerformLayout();
+            this.panellogo.ResumeLayout(false);
+            this.panellogo.PerformLayout();
+            this.menupan.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -455,32 +595,39 @@
         #endregion
 
         private System.Windows.Forms.Panel panelcontrol;
-        private System.Windows.Forms.Panel menupan;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button Installationbt;
-        private System.Windows.Forms.Button logoutbt;
-        private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Label position;
-        private System.Windows.Forms.Button paybt;
-        private System.Windows.Forms.Button reciptbt;
-        private System.Windows.Forms.Button sparebt;
-        private System.Windows.Forms.Button mantainbt;
-        private System.Windows.Forms.Panel paneldetail;
-        private System.Windows.Forms.Button searchbt;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panelbar;
-        private System.Windows.Forms.Panel panellogo;
         private System.Windows.Forms.Label LBtittle;
         private System.Windows.Forms.Panel Desktopane;
         private System.Windows.Forms.Button btnCloseChildForm;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button maxi;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button resstore;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel menupan;
+        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button employbt;
+        private System.Windows.Forms.Panel panellogo;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel paneldetail;
+        private System.Windows.Forms.Label name;
+        private System.Windows.Forms.Label position;
+        private System.Windows.Forms.Button logoutbt;
+        private System.Windows.Forms.Button searchbt;
+        private System.Windows.Forms.Button paybt;
+        private System.Windows.Forms.Button reciptbt;
+        private System.Windows.Forms.Button sparebt;
+        private System.Windows.Forms.Button mantainbt;
+        private System.Windows.Forms.Button Installationbt;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
     }
 }
 

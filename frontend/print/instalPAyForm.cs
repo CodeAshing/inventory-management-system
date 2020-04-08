@@ -31,7 +31,7 @@ namespace frontend.print
             ipr.SetParameterValue("Date", p.dateTp.Text);
             crystalReportViewer1.ReportSource = ipr;
             crystalReportViewer1.Refresh();
-
+            
         }
 
         private void instalPAyForm_Load(object sender, EventArgs e)
