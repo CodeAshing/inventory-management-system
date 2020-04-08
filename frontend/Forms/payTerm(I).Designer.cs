@@ -187,19 +187,18 @@
         }
 
         #endregion
-
-        private ChreneLib.Controls.TextBoxes.CTextBox discriptionTB;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTp;
-        private ChreneLib.Controls.TextBoxes.CTextBox priceTD;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button submitBT;
-        private System.Windows.Forms.ComboBox perCB;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        public ChreneLib.Controls.TextBoxes.CTextBox discriptionTB;
+        public System.Windows.Forms.DateTimePicker dateTp;
+        public ChreneLib.Controls.TextBoxes.CTextBox priceTD;
+        public System.Windows.Forms.ComboBox perCB;
     }
 }

@@ -12,7 +12,7 @@ namespace Data
          private readonly string connectionString;
        public ConnectionToSql()
         {
-            connectionString = "Server=DESKTOP-HMI8KPC\\SQL2019TEST; DataBase=ALROUGI; integrated security=true";
+            connectionString = "Data Source=DESKTOP-EU1SO11;Initial Catalog=ALROUGI;Integrated Security=True";
             
 
         }

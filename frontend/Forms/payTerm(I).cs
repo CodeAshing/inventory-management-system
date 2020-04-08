@@ -16,7 +16,7 @@ namespace frontend.Forms
     public partial class pay_term : Form
     {
         SqlCommand cmd;
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-HMI8KPC\SQL2019TEST;Initial Catalog=ALROUGI;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-EU1SO11;Initial Catalog=ALROUGI;Integrated Security=True");
 
         private INSTALLATION ins;
         public pay_term(INSTALLATION ins)
@@ -84,6 +84,10 @@ namespace frontend.Forms
                 con.Close();
             }
         }
+        //assign variable to pass the report
+
+        public string namePrint,phonePrint;
+        public int amountPrint;
         private void pay_term_Load(object sender, EventArgs e)
         {
             LoadTheme();
@@ -101,6 +105,7 @@ namespace frontend.Forms
             {
                 formloadO();
             }
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -181,9 +186,19 @@ namespace frontend.Forms
             dateTp.Text = null;
         }
 
+        void Print()
+        {
+
+            namePrint = ins.name_transfer;
+            amountPrint= (int.Parse(perCB.Text) * ins.amountO) / 100;
+            phonePrint=ins.phonetb.Text;
+            print.instalPAyForm f = new print.instalPAyForm(this);
+            f.Show();
+        }
         int id=0;
         private void button3_Click(object sender, EventArgs e)
         {
+            Print();
             if (ins.flag_new == "yes")
             {
                 if (id != 0)

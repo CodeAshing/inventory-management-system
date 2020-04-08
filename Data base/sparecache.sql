@@ -29,3 +29,4 @@ create table Spare (
 	union all	
 	select ' ','',N'المبلغ الإجمالي','',sum(cast(سعر_السلعة as int)),'', sum(cast(مجموع as int)),'' from Spare
 
+	select  sum(cast(مجموع as int)) from Spare

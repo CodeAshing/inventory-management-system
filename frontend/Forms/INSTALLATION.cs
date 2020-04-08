@@ -17,7 +17,7 @@ namespace frontend.Forms
     public partial class INSTALLATION : Form
     {
         SqlCommand cmd;
-        SqlConnection con= new SqlConnection(@"Data Source=DESKTOP-HMI8KPC\SQL2019TEST;Initial Catalog=ALROUGI;Integrated Security=True");       
+        SqlConnection con= new SqlConnection(@"Data Source=DESKTOP-EU1SO11;Initial Catalog=ALROUGI;Integrated Security=True");       
         
         SqlDataReader rea;
         public INSTALLATION()

@@ -126,3 +126,5 @@ E:\inventory-management-system\frontend\obj\Debug\frontend.print.MaintanPrintFor
 E:\inventory-management-system\frontend\obj\Debug\frontend.print.payPrintForm.resources
 E:\inventory-management-system\frontend\obj\Debug\frontend.print.ReciptPrintForm.resources
 E:\inventory-management-system\frontend\obj\Debug\frontend.print.sparePrintForm.resources
+E:\inventory-management-system\frontend\obj\Debug\frontend.print.instalPAyForm.resources
+E:\inventory-management-system\frontend\obj\Debug\frontend.print.mainPayForm.resources

@@ -15,7 +15,7 @@ namespace frontend.Forms
     public partial class PayTerm_M_ : Form
     {
         SqlCommand cmd;
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-HMI8KPC\SQL2019TEST;Initial Catalog=ALROUGI;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-EU1SO11;Initial Catalog=ALROUGI;Integrated Security=True");
 
         private MAINTENANCE ma;
         public PayTerm_M_(MAINTENANCE ma)
@@ -108,8 +108,21 @@ namespace frontend.Forms
             }
         }
         int id = 0;
+
+        public string namePrint, phonePrint;
+        public int amountPrint;
+        void Print()
+        {
+
+            namePrint = ma.name_transfer;
+            amountPrint = (int.Parse(perCB.Text) * ma.amountO) / 100;
+            phonePrint = ma.PhoneTB.Text;
+            print.mainPayForm f = new print.mainPayForm(this);
+            f.Show();
+        }
         private void button3_Click(object sender, EventArgs e)
         {
+            Print();
             if (ma.flag_new == "yes")
             {
                 if (id != 0)

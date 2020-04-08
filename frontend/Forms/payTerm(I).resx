@@ -151,7 +151,7 @@
     <value>11</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -181,7 +181,7 @@
     <value>12</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 15pt</value>
+    <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -211,7 +211,7 @@
     <value>10</value>
   </data>
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 15pt</value>
+    <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -289,7 +289,7 @@
     <value>6</value>
   </data>
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 15pt</value>
+    <value>Microsoft Sans Serif, 15pt</value>
   </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -322,7 +322,7 @@
     <value>Flat</value>
   </data>
   <data name="submitBT.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="submitBT.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -366,6 +366,9 @@
   <data name="perCB.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
   </data>
+  <data name="perCB.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;perCB.Name" xml:space="preserve">
     <value>perCB</value>
   </data>
@@ -382,7 +385,7 @@
     <value>Flat</value>
   </data>
   <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -442,7 +445,7 @@
     <value>Flat</value>
   </data>
   <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -478,7 +481,7 @@
     <value>Flat</value>
   </data>
   <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS Reference Sans Serif, 13pt</value>
+    <value>Microsoft Sans Serif, 13pt</value>
   </data>
   <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

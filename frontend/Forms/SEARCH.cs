@@ -14,7 +14,7 @@ namespace frontend.Forms
 {
     public partial class SEARCH : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-HMI8KPC\SQL2019TEST;Initial Catalog=ALROUGI;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-EU1SO11;Initial Catalog=ALROUGI;Integrated Security=True");
         
         public SEARCH()
         {
@@ -74,7 +74,7 @@ namespace frontend.Forms
 
             if (flag == "payment")
             {
-                cmd = new SqlCommand("select  t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم, SUM(t2.المجموع) as المجموع from payment t1 inner join payment t2 on t1.رقم_العقد >= t2.رقم_العقد and t1.ااسم_العميل = t2.ااسم_العميل group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم", con);
+                cmd = new SqlCommand("select  t1.ااسم_العميل, t1.تاريخ,  t1.الفئة  t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم, SUM(t2.المجموع) as المجموع from payment t1 inner join payment t2 on t1.رقم_العقد >= t2.رقم_العقد and t1.ااسم_العميل = t2.ااسم_العميل group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم", con);
 
             }
             else if (flag == "receipt")
@@ -101,8 +101,7 @@ namespace frontend.Forms
             {
                 con.Open();
                 cmd.ExecuteNonQuery();
-                SqlDataAdapter da;
-                da = new SqlDataAdapter(cmd);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable tb = new DataTable();
                 da.Fill(tb);
                 dataGridView1.DataSource = tb;
@@ -126,6 +125,7 @@ namespace frontend.Forms
             pay_rec_fillCat();
             LoadTheme();
             formload();
+            hide_search();
 
         }
        
@@ -394,12 +394,16 @@ namespace frontend.Forms
             {
                 if (PRS_catCB.Text == "موظف")
                 {
-
+                    endDTP.Hide();
+                    dateEmpLabel.Hide();
                     cmd = new SqlCommand("select  * from موظف ", con);
                 }
                 else
                 {
-                    cmd = new SqlCommand("select  * from payment where الفئة=N'"+PRS_catCB.Text+"'", con);
+
+                    endDTP.Show();
+                    dateEmpLabel.Show();
+                    cmd = new SqlCommand("select  t1.ااسم_العميل , t1.تاريخ , t1.الفئة, t1.نوع_الدفع , t1.وصف ,t1.المبلغ_بالكلمات  , t1.مدفوع  , t1.تسلم  ,SUM(t2.المجموع) as المجموع from payment t1 inner join payment t2 on t1.رقم_العقد >= t2.رقم_العقد and t1.ااسم_العميل = t2.ااسم_العميل and t1.الفئة=N'" + PRS_catCB.Text + "' group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم"  , con);
                 }
             }
             try
@@ -472,7 +476,7 @@ namespace frontend.Forms
                 }
                 else
                 {
-                    cmd = new SqlCommand("select  * from payment where الفئة=N'" + PRS_catCB.Text + "' and  ااسم_العميل =N'" + PRS_NCB.Text + "'and  تاريخ>=N'" + prs_DateTP.Text + "' ", con);
+                    cmd = new SqlCommand("select  t1.ااسم_العميل , t1.تاريخ , t1.الفئة, t1.نوع_الدفع , t1.وصف ,t1.المبلغ_بالكلمات  , t1.مدفوع  , t1.تسلم  ,SUM(t2.المجموع) as المجموع  from payment t1 inner join payment t2 on t1.الفئة=N'" + PRS_catCB.Text + "' and  t1.ااسم_العميل =N'" + PRS_NCB.Text + "' and  t1.تاريخ>=N'" + prs_DateTP.Text + "'  group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم ", con);
                 }
             }
             try
@@ -550,7 +554,7 @@ namespace frontend.Forms
                 }
                 else
                 {
-                    cmd = new SqlCommand("select  * from payment where الفئة=N'" + PRS_catCB.Text + "' and  ااسم_العميل =N'" + PRS_NCB.Text + "' ", con);
+                    cmd = new SqlCommand("select  t1.ااسم_العميل , t1.تاريخ , t1.الفئة, t1.نوع_الدفع , t1.وصف ,t1.المبلغ_بالكلمات  , t1.مدفوع  , t1.تسلم  ,SUM(t2.المجموع) as المجموع from payment t1 inner join payment t2 on t1.رقم_العقد >= t2.رقم_العقد and t1.ااسم_العميل = t2.ااسم_العميل and t1.الفئة=N'" + PRS_catCB.Text + "' and  t1.ااسم_العميل =N'" + PRS_NCB.Text + "' group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم  ", con);
                 }
             }
 
@@ -582,6 +586,8 @@ namespace frontend.Forms
             PRS_name.Hide();
             PRS_catCB.Hide();
             PRS_cat.Hide();
+            endDTP.Hide();
+            dateEmpLabel.Hide();
 
             if (flag == "payment" || flag == "receipt"|| flag == "install"|| flag == "maintan")
             {
@@ -616,18 +622,52 @@ namespace frontend.Forms
 
         }
 
-        private void endDTP_ValueChanged(object sender, EventArgs e)
+        /*
+        void print()
         {
-            SqlCommand cmd;
-            if (PRS_catCB.Text == "موظف")
+            if (flag == "payment")
             {
-
-                cmd = new SqlCommand("select  * from موظف where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ_الولادة=N'" + prs_DateTP.Text + "' ", con);
+            }
+            else if (flag == "receipt")
+            {
+            }
+            else if (flag == "install")
+            {
+                if (PRS_catCB.Text == "التركيب")
+                {
+                    
+                }
+                else
+                {
+                }
+            }
+            else if (flag == "maintan")
+            {
+                if (PRS_catCB.Text == "صيانة")
+                {
+                    
+                }
+                else
+                {
+                }
             }
             else
             {
-                cmd = new SqlCommand("select  * from payment where الفئة=N'" + PRS_catCB.Text + "' and  ااسم_العميل =N'" + PRS_NCB.Text + "'and  تاريخ>=N'" + prs_DateTP.Text + "', تاريخ<=N'" + endDTP.Text + "' ", con);
+                if (PRS_catCB.Text == "موظف")
+                {
+                }
+                else
+                {
+                }
             }
+        }*/
+
+
+        private void endDTP_ValueChanged(object sender, EventArgs e)
+        {
+            SqlCommand cmd;
+            cmd = new SqlCommand("select  t1.ااسم_العميل , t1.تاريخ , t1.الفئة, t1.نوع_الدفع , t1.وصف ,t1.المبلغ_بالكلمات  , t1.مدفوع  , t1.تسلم  ,SUM(t2.المجموع) as المجموع from payment t1  inner join payment t2 on t1.رقم_العقد >= t2.رقم_العقد and t1.ااسم_العميل = t2.ااسم_العميل  where t1.الفئة=N'" + PRS_catCB.Text + "' and  t2.ااسم_العميل =N'" + PRS_NCB.Text + "' and  t2.تاريخ >=N'" + prs_DateTP.Text + "' and  t1.تاريخ <=N'" + endDTP.Text + "'  group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم  ", con);
+            
 
             try
             {

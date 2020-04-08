@@ -135,6 +135,18 @@
     <Compile Include="login.designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="print\instalPAyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\instalPAyForm.Designer.cs">
+      <DependentUpon>instalPAyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\instalPayReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>instalPayReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="print\instalPrintForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>instalPrintReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="print\mainPayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print\mainPayForm.Designer.cs">
+      <DependentUpon>mainPayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print\mainpayReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mainpayReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="print\MaintanPrintForm.cs">
@@ -197,6 +221,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sataSet\printDataTable.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>printDataTable.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="Themecolor.cs" />
     <EmbeddedResource Include="FormPrincipal.resx">
@@ -238,12 +267,26 @@
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="print\instalPAyForm.resx">
+      <DependentUpon>instalPAyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\instalPayReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>instalPayReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="print\instalPrintForm.resx">
       <DependentUpon>instalPrintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="print\instalPrintReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>instalPrintReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\mainPayForm.resx">
+      <DependentUpon>mainPayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print\mainpayReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>mainpayReport.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="print\MaintanPrintForm.resx">
       <DependentUpon>MaintanPrintForm.cs</DependentUpon>
@@ -293,6 +336,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sataSet\printDataTable.xsc">
+      <DependentUpon>printDataTable.xsd</DependentUpon>
+    </None>
+    <None Include="sataSet\printDataTable.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>printDataTable.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sataSet\printDataTable.xss">
+      <DependentUpon>printDataTable.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
