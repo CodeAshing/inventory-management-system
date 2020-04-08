@@ -49,7 +49,7 @@ namespace frontend.Forms
             flag_new = "no";
             clearboxes();
         }
-        public int amountO;
+        public Int64 amountO;
         public string name_transfer;
         public string ph_transfer;
         public string date_transfer;
@@ -59,7 +59,7 @@ namespace frontend.Forms
             {
                 if (priceTB.Text != "")
                 {
-                    amountO = Int32.Parse(priceTB.Text);
+                    amountO = Int64.Parse(priceTB.Text);
                 }
                 PayTerm_M_ pay = new PayTerm_M_(this);
                 pay.Show(this);
@@ -165,7 +165,7 @@ namespace frontend.Forms
                 //print form
                 Print();
 
-                cmd = new SqlCommand("insert into صيانة values(N'" + nameTB.Text + "',N'" + CategoryCB.Text + "',N'" + PhoneTB.Text + "',N'" + dateSTP.Text+ "',N'" + dateETP.Text + "',N'" + floorTB.Text + "',N'" + stopCB.Text + "',N'" + DeliveryTB.Text + "',N'" + placetb.Text + "','" + Int32.Parse(priceTB.Text )+ "',N'" + noteCB.Text + "',N'" + FlooringTB.Text + "',N'" + discriptionTB.Text + "')", con);
+                cmd = new SqlCommand("insert into صيانة values(N'" + nameTB.Text + "',N'" + CategoryCB.Text + "',N'" + PhoneTB.Text + "',N'" + dateSTP.Text+ "',N'" + dateETP.Text + "',N'" + floorTB.Text + "',N'" + stopCB.Text + "',N'" + DeliveryTB.Text + "',N'" + placetb.Text + "','" + Int64.Parse(priceTB.Text )+ "',N'" + noteCB.Text + "',N'" + FlooringTB.Text + "',N'" + discriptionTB.Text + "')", con);
                 try
                 {
                     con.Open();

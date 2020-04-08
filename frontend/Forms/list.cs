@@ -82,7 +82,7 @@ namespace frontend.Forms
             if (priceTB.Text != "")
             {
 
-                cmd = new SqlCommand("insert into قائمة values(N'" + nameTB.Text + "','" + Int32.Parse(priceTB.Text )+"')", con);
+                cmd = new SqlCommand("insert into قائمة values(N'" + nameTB.Text + "','" + Int64.Parse(priceTB.Text )+"')", con);
                 try
                 {
                     con.Open();

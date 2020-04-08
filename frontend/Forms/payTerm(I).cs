@@ -87,7 +87,7 @@ namespace frontend.Forms
         //assign variable to pass the report
 
         public string namePrint,phonePrint;
-        public int amountPrint;
+        public Int64 amountPrint;
         private void pay_term_Load(object sender, EventArgs e)
         {
             LoadTheme();
@@ -190,7 +190,7 @@ namespace frontend.Forms
         {
 
             namePrint = ins.name_transfer;
-            amountPrint= (int.Parse(perCB.Text) * ins.amountO) / 100;
+            amountPrint= (Int64.Parse(perCB.Text) * ins.amountO) / 100;
             phonePrint=ins.phonetb.Text;
             print.instalPAyForm f = new print.instalPAyForm(this);
             f.Show();

@@ -189,11 +189,11 @@ namespace frontend.Forms
             SqlCommand cmd;
             if (flag == "payment")
             {
-                cmd = new SqlCommand("select  * from payment", con);
+                cmd = new SqlCommand("select   DISTINCT ااسم_العميل from payment", con);
             }
             else if (flag == "receipt")
             {
-                cmd = new SqlCommand("select  * from recived", con);
+                cmd = new SqlCommand("select   DISTINCT ااسم_العميل from recived", con);
             }
             else if (flag == "spare")
             {
@@ -201,15 +201,15 @@ namespace frontend.Forms
             }
             else if (flag == "install")
             {
-                cmd = new SqlCommand("select  * from التركيب", con);
+                cmd = new SqlCommand("select   DISTINCT ااسم_العميل from التركيب", con);
             }
             else if (flag == "maintan")
             {
-                cmd = new SqlCommand("select  * from صيانة", con);
+                cmd = new SqlCommand("select   DISTINCT ااسم_العميل from صيانة", con);
             }
             else
             {
-                cmd = new SqlCommand("select  * from موظف", con);
+                cmd = new SqlCommand("select  DISTINCT ااسم_العميل from موظف", con);
             }
             try
             {

@@ -110,12 +110,12 @@ namespace frontend.Forms
         int id = 0;
 
         public string namePrint, phonePrint;
-        public int amountPrint;
+        public Int64 amountPrint;
         void Print()
         {
 
             namePrint = ma.name_transfer;
-            amountPrint = (int.Parse(perCB.Text) * ma.amountO) / 100;
+            amountPrint = (Int64.Parse(perCB.Text) * ma.amountO) / 100;
             phonePrint = ma.PhoneTB.Text;
             print.mainPayForm f = new print.mainPayForm(this);
             f.Show();
@@ -194,7 +194,7 @@ namespace frontend.Forms
 
                 if (ma.flag_new == "yes")
                 {
-                    cmd = new SqlCommand("insert into MCpay values(N'" + ma.name_transfer + "','" + Int32.Parse(perCB.Text) * ma.amountO / 100 + "',N'" + ma.amountO + "','" + int.Parse(perCB.Text) + "','" + dateTp.Text + "','" + discriptionTB.Text + "',N'لا')", con);
+                    cmd = new SqlCommand("insert into MCpay values(N'" + ma.name_transfer + "','" + Int64.Parse(perCB.Text) * ma.amountO / 100 + "',N'" + ma.amountO + "','" + Int32.Parse(perCB.Text) + "','" + dateTp.Text + "','" + discriptionTB.Text + "',N'لا')", con);
                     try
                     {
                         con.Open();

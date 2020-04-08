@@ -70,7 +70,7 @@ namespace frontend.Forms
                 {
                     int rec_value = 0;
 
-                    cmd = new SqlCommand("insert into payment values(N'" + nametb.Text + "',N'" + dateTP.Text + "',N'" + category.Text + "',N'" + amountypeCB.Text + "',N'" + discription.Text + "',N'" + priceIWCB.Text + "',N'" + Int32.Parse(priceTb.Text) + "',N'" + rec_value + "')", con);
+                    cmd = new SqlCommand("insert into payment values(N'" + nametb.Text + "',N'" + dateTP.Text + "',N'" + category.Text + "',N'" + amountypeCB.Text + "',N'" + discription.Text + "',N'" + priceIWCB.Text + "',N'" + Int64.Parse(priceTb.Text) + "',N'" + rec_value + "')", con);
 
                     try
                     {

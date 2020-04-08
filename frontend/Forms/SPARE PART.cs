@@ -134,7 +134,7 @@ namespace frontend.Forms
 
                 qty = int.Parse(qtyCB.Text);
                 string[] value = listCB.Text.Split('|');
-                cmd = new SqlCommand("insert into Spare values(N'" + nameTB.Text + "',N'" + categoryCB.Text + "',N'" + value[0]+ "',N'" + value[1] + "',N'" + qty.ToString() + "',N'" + (Int32.Parse(value[1]) * qty).ToString() +"', N'" + dateTP.Text + "')", con);
+                cmd = new SqlCommand("insert into Spare values(N'" + nameTB.Text + "',N'" + categoryCB.Text + "',N'" + value[0]+ "',N'" + value[1] + "',N'" + qty.ToString() + "',N'" + (Int64.Parse(value[1]) * qty).ToString() +"', N'" + dateTP.Text + "')", con);
                 try
                 {
                     con.Open();

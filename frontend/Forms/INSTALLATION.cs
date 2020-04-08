@@ -95,7 +95,7 @@ namespace frontend.Forms
         {
 
         }
-        public int amountO;
+        public Int64 amountO;
         private void button5_Click(object sender, EventArgs e)
         {
             searchbutton.Visible = true;
@@ -173,7 +173,7 @@ namespace frontend.Forms
 
             if (pricetb.Text != "")
             {
-                    amountO = Int32.Parse(pricetb.Text);
+                    amountO = Int64.Parse(pricetb.Text);
             }
 
             name_transfer= nametb.Text;
@@ -240,7 +240,7 @@ namespace frontend.Forms
             if (pricetb.Text != "")
             {
                 Print();
-                cmd = new SqlCommand("insert into التركيب values(N'" + nametb.Text + "',N'" + phonetb.Text + "',N'" + catCB.Text + "',N'" + dateTP.Text + "','" + Int32.Parse(pricetb.Text) + "',N'" + floortb.Text + "',N'" + Stopcb.Text + "',N'" + warrantyTB.Text + "',N'" + deliveryTB.Text + "',N'" + placetb.Text + "',N'" + noteCB.Text + "',N'" + machineTB.Text + "',N'" + doorTB.Text + "',N'" + flooringTB.Text + "',N'" + KOSTB.Text + "',N'" + cabinTB.Text + "',N'" + discriptionTB.Text + "')", con);
+                cmd = new SqlCommand("insert into التركيب values(N'" + nametb.Text + "',N'" + phonetb.Text + "',N'" + catCB.Text + "',N'" + dateTP.Text + "','" + Int64.Parse(pricetb.Text) + "',N'" + floortb.Text + "',N'" + Stopcb.Text + "',N'" + warrantyTB.Text + "',N'" + deliveryTB.Text + "',N'" + placetb.Text + "',N'" + noteCB.Text + "',N'" + machineTB.Text + "',N'" + doorTB.Text + "',N'" + flooringTB.Text + "',N'" + KOSTB.Text + "',N'" + cabinTB.Text + "',N'" + discriptionTB.Text + "')", con);
                 try
                 {
                     con.Open();
