@@ -173,7 +173,7 @@ namespace frontend.Forms
 
             if (pricetb.Text != "")
             {
-                amountO = int.Parse(pricetb.Text);
+                    amountO = Int32.Parse(pricetb.Text);
             }
 
             name_transfer= nametb.Text;
@@ -240,7 +240,7 @@ namespace frontend.Forms
             if (pricetb.Text != "")
             {
                 Print();
-                cmd = new SqlCommand("insert into التركيب values(N'" + nametb.Text + "',N'" + phonetb.Text + "',N'" + catCB.Text + "',N'" + dateTP.Text + "','" + int.Parse(pricetb.Text) + "',N'" + floortb.Text + "',N'" + Stopcb.Text + "',N'" + warrantyTB.Text + "',N'" + deliveryTB.Text + "',N'" + placetb.Text + "',N'" + noteCB.Text + "',N'" + machineTB.Text + "',N'" + doorTB.Text + "',N'" + flooringTB.Text + "',N'" + KOSTB.Text + "',N'" + cabinTB.Text + "',N'" + discriptionTB.Text + "')", con);
+                cmd = new SqlCommand("insert into التركيب values(N'" + nametb.Text + "',N'" + phonetb.Text + "',N'" + catCB.Text + "',N'" + dateTP.Text + "','" + Int32.Parse(pricetb.Text) + "',N'" + floortb.Text + "',N'" + Stopcb.Text + "',N'" + warrantyTB.Text + "',N'" + deliveryTB.Text + "',N'" + placetb.Text + "',N'" + noteCB.Text + "',N'" + machineTB.Text + "',N'" + doorTB.Text + "',N'" + flooringTB.Text + "',N'" + KOSTB.Text + "',N'" + cabinTB.Text + "',N'" + discriptionTB.Text + "')", con);
                 try
                 {
                     con.Open();
@@ -277,7 +277,7 @@ namespace frontend.Forms
                     con.Close();
                 }
 
-                cmd = new SqlCommand("delete  from ICpay", con);
+                cmd = new SqlCommand("delete  from ICpay DBCC CHECKIDENT('ICpay', RESEED, 0)", con);
                 try
                 {
                     con.Open();
@@ -387,7 +387,7 @@ namespace frontend.Forms
             if (pricetb.Text != "" && searchCB.Text!="")
             {
                 string[] value = searchCB.Text.Split('|');
-                cmd = new SqlCommand("UPDATE  التركيب SET ااسم_العميل=N'" + nametb.Text + "',التيليفون=N'" + phonetb.Text + "',نوع_المصعد=N'" + catCB.Text + "',تاريخ_توقيع_العقد=N'" + dateTP.Text + "',قيمة_العقد='" + int.Parse(pricetb.Text) + "',عدد_الطوابق=N'" + floortb.Text + "',عدد_الوقفات=N'" + Stopcb.Text + "',نهاية_الضمان=N'" + warrantyTB.Text + "',عقد_التسليم=N'" + deliveryTB.Text + "',الموقع=N'" + placetb.Text + "',ملاحظه=N'" + noteCB.Text + "',الماكينة=N'" + machineTB.Text + "',مقاس_وطبيعه_الابواب=N'" + doorTB.Text + "',الارضيه=N'" + flooringTB.Text + "',نوع_الاستيل=N'" + KOSTB.Text + "',لكابينة=N'" + cabinTB.Text + "',ديسكريبشن=N'" + discriptionTB.Text + "' WHERE رقم_العقد=" + int.Parse(value[1]), con);
+                cmd = new SqlCommand("UPDATE  التركيب SET ااسم_العميل=N'" + nametb.Text + "',التيليفون=N'" + phonetb.Text + "',نوع_المصعد=N'" + catCB.Text + "',تاريخ_توقيع_العقد=N'" + dateTP.Text + "',قيمة_العقد='" + Int32.Parse(pricetb.Text) + "',عدد_الطوابق=N'" + floortb.Text + "',عدد_الوقفات=N'" + Stopcb.Text + "',نهاية_الضمان=N'" + warrantyTB.Text + "',عقد_التسليم=N'" + deliveryTB.Text + "',الموقع=N'" + placetb.Text + "',ملاحظه=N'" + noteCB.Text + "',الماكينة=N'" + machineTB.Text + "',مقاس_وطبيعه_الابواب=N'" + doorTB.Text + "',الارضيه=N'" + flooringTB.Text + "',نوع_الاستيل=N'" + KOSTB.Text + "',لكابينة=N'" + cabinTB.Text + "',ديسكريبشن=N'" + discriptionTB.Text + "' WHERE رقم_العقد=" + Int32.Parse(value[1]), con);
                 try
                 {
                     con.Open();
@@ -430,7 +430,7 @@ namespace frontend.Forms
                  con.Open();
                  cmd = con.CreateCommand();
                  cmd.CommandType = CommandType.Text;
-                 cmd.CommandText = "select  * from التركيب where رقم_العقد="+int.Parse(value[1]);
+                 cmd.CommandText = "select  * from التركيب where رقم_العقد="+Int32.Parse(value[1]);
                  cmd.ExecuteNonQuery();
                 SqlDataAdapter  da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();

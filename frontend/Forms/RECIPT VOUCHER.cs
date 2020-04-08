@@ -64,13 +64,12 @@ namespace frontend.Forms
                 Print();
 
 
-                cmd = new SqlCommand("insert into recived values(N'" + nametb.Text + "',N'" + dateTP.Text + "',N'" + RfromCB.Text + "',N'" + categoryCB.Text + "','" + int.Parse(priceTb.Text) + "',N'" + priceIWCB.Text + "',N'" + discription.Text + "')", con);
+                cmd = new SqlCommand("insert into recived values(N'" + nametb.Text + "',N'" + dateTP.Text + "',N'" + RfromCB.Text + "',N'" + categoryCB.Text + "','" + Int32.Parse(priceTb.Text) + "',N'" + priceIWCB.Text + "',N'" + discription.Text + "')", con);
                 try
                 {
                     con.Open();
                     cmd.ExecuteNonQuery();
 
-                    MessageBox.Show("Record Successfully Inserted", "INFORMATION", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                     clearboxes();
                 }
                 catch (Exception ex)

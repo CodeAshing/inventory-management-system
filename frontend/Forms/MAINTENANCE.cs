@@ -59,7 +59,7 @@ namespace frontend.Forms
             {
                 if (priceTB.Text != "")
                 {
-                    amountO = int.Parse(priceTB.Text);
+                    amountO = Int32.Parse(priceTB.Text);
                 }
                 PayTerm_M_ pay = new PayTerm_M_(this);
                 pay.Show(this);
@@ -165,7 +165,7 @@ namespace frontend.Forms
                 //print form
                 Print();
 
-                cmd = new SqlCommand("insert into صيانة values(N'" + nameTB.Text + "',N'" + CategoryCB.Text + "',N'" + PhoneTB.Text + "',N'" + dateSTP.Text+ "',N'" + dateETP.Text + "',N'" + floorTB.Text + "',N'" + stopCB.Text + "',N'" + DeliveryTB.Text + "',N'" + placetb.Text + "','" + int.Parse(priceTB.Text )+ "',N'" + noteCB.Text + "',N'" + FlooringTB.Text + "',N'" + discriptionTB.Text + "')", con);
+                cmd = new SqlCommand("insert into صيانة values(N'" + nameTB.Text + "',N'" + CategoryCB.Text + "',N'" + PhoneTB.Text + "',N'" + dateSTP.Text+ "',N'" + dateETP.Text + "',N'" + floorTB.Text + "',N'" + stopCB.Text + "',N'" + DeliveryTB.Text + "',N'" + placetb.Text + "','" + Int32.Parse(priceTB.Text )+ "',N'" + noteCB.Text + "',N'" + FlooringTB.Text + "',N'" + discriptionTB.Text + "')", con);
                 try
                 {
                     con.Open();
@@ -203,7 +203,7 @@ namespace frontend.Forms
                     con.Close();
                 }
 
-                cmd = new SqlCommand("delete  from MCpay", con);
+                cmd = new SqlCommand("delete  from MCpay DBCC CHECKIDENT('MCpay', RESEED, 0)", con);
                 try
                 {
                     con.Open();
@@ -242,7 +242,7 @@ namespace frontend.Forms
 
                 //delete all from Mpay
 
-                cmd = new SqlCommand("delete from Mpay where رقم_العقد=" + int.Parse(value[1]), con);
+                cmd = new SqlCommand("delete from Mpay where رقم_العقد=" + Int32.Parse(value[1]), con);
 
 
                 try
@@ -264,7 +264,7 @@ namespace frontend.Forms
                 }
 
                 //delete maintances record
-                cmd = new SqlCommand("delete from صيانة where رقم_العقد=" + int.Parse(value[1]), con);
+                cmd = new SqlCommand("delete from صيانة where رقم_العقد=" + Int32.Parse(value[1]), con);
 
                 try
                 {
@@ -338,7 +338,7 @@ namespace frontend.Forms
             if (priceTB.Text != "" && searchCB.Text != "")
             {
                 string[] value = searchCB.Text.Split('|');
-                cmd = new SqlCommand("UPDATE  صيانة SET ااسم_العميل=N'" + nameTB.Text + "',نوع_المصعد=N'" + CategoryCB.Text + "',التيليفون=N'" + PhoneTB.Text + "',تاريخ_البدء=N'" + dateSTP.Text + "',تاريخ_الانتهاء='" + dateETP.Text + "',عدد_الطوابق=N'" + floorTB.Text + "',عدد_الوقفات=N'" + stopCB.Text + "',عقد_التسليم=N'" + DeliveryTB.Text + "',الموقع=N'" + placetb.Text + "',قيمة_العقد='" + int.Parse(priceTB.Text )+ "',ملاحظه=N'" + noteCB.Text + "',نوع_الاستيل=N'" + FlooringTB.Text + "',ديسكريبشن=N'" + discriptionTB.Text + "' WHERE رقم_العقد=" + int.Parse(value[1]), con);
+                cmd = new SqlCommand("UPDATE  صيانة SET ااسم_العميل=N'" + nameTB.Text + "',نوع_المصعد=N'" + CategoryCB.Text + "',التيليفون=N'" + PhoneTB.Text + "',تاريخ_البدء=N'" + dateSTP.Text + "',تاريخ_الانتهاء='" + dateETP.Text + "',عدد_الطوابق=N'" + floorTB.Text + "',عدد_الوقفات=N'" + stopCB.Text + "',عقد_التسليم=N'" + DeliveryTB.Text + "',الموقع=N'" + placetb.Text + "',قيمة_العقد='" + Int32.Parse(priceTB.Text )+ "',ملاحظه=N'" + noteCB.Text + "',نوع_الاستيل=N'" + FlooringTB.Text + "',ديسكريبشن=N'" + discriptionTB.Text + "' WHERE رقم_العقد=" + Int32.Parse(value[1]), con);
                 try
                 {
                     con.Open();

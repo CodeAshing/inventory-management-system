@@ -121,100 +121,103 @@
   <data name="ded" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ded.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="eded" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\eded.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="maxresdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxresdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="photo_1565417814737_6b4097de8a3a" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photo-1565417814737-6b4097de8a3a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_11686ad6feb0ff1a715482d0396c1896_700" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\11686ad6feb0ff1a715482d0396c1896-700.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_7OTIiJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\7OTIiJ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="claudio_de_sat_architecture_modern_elevator_wallpaper_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\claudio-de-sat-architecture-modern-elevator-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="EMS_Elevator_Building_w" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\EMS_Elevator_Building-w.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ADAM_elevator_3ed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ADAM_elevator_3ed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="building_interior_architecture_147081_2560x1440" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\building_interior_architecture_147081_2560x1440.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="dirty_elevator_buttons" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dirty-elevator-buttons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ede" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ede.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="elevator_cabin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\elevator_cabin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="elevator_core" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\elevator_core.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Elevator_Lobby_reduced" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Elevator-Lobby-reduced.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="elevator_modern_architecture_motion_blur_wallpaper_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\elevator-modern-architecture-motion-blur-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="erq" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\erq.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="external_content_duckduckgo_com" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\external-content.duckduckgo.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="f3rf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\f3rf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hotel_Elevator_Hall_INTmasthead" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hotel-Elevator-Hall-INTmasthead.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lobby_on_pinterest_elevator_lobby_lobbies_and_hotel_lobby" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lobby-on-pinterest-elevator-lobby-lobbies-and-hotel-lobby.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="London_underground_Oxford_Circus_train_station_elevator_1457679" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\London-underground-Oxford-Circus-train-station-elevator-1457679.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="maxresdefaultjh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\maxresdefaultjh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="videoblocks_modern_hotel_office_skyscraper_building_elevator_lift_moving_up_b3y0p58rx_thumbnail_full04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\videoblocks-modern-hotel-office-skyscraper-building-elevator-lift-moving-up_b3y0p58rx_thumbnail-full04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elevator_cabin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elevator_cabin.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elevator_Lobby_reduced" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Elevator-Lobby-reduced.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="erq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\erq.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="observationlift" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\observationlift.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="qddq" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\qddq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="external_content_duckduckgo_com" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\external-content.duckduckgo.com.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="videoblocks_modern_hotel_office_skyscraper_building_elevator_lift_moving_up_b3y0p58rx_thumbnail_full04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\videoblocks-modern-hotel-office-skyscraper-building-elevator-lift-moving-up_b3y0p58rx_thumbnail-full04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_7OTIiJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7OTIiJ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wp2303645" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wp2303645.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maxresdefaultjh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxresdefaultjh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="wp2303787a" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wp2303787a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="elevator_modern_architecture_motion_blur_wallpaper_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elevator-modern-architecture-motion-blur-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_13e" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\13e.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="maxresdefault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\maxresdefault.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="claudio_de_sat_architecture_modern_elevator_wallpaper_preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\claudio-de-sat-architecture-modern-elevator-wallpaper-preview.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eded" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eded.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_16117405071_9875ab6f20_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\16117405071_9875ab6f20_b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wp2303787a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wp2303787a.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EMS_Elevator_Building_w" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EMS_Elevator_Building-w.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_11686ad6feb0ff1a715482d0396c1896_700" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11686ad6feb0ff1a715482d0396c1896-700.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dirty_elevator_buttons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dirty-elevator-buttons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="elevator_core" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\elevator_core.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="qddq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\qddq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_13e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\13e.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f3rf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f3rf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ede" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ede.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="building_interior_architecture_147081_2560x1440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\building_interior_architecture_147081_2560x1440.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="wp2303645" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wp2303645.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hotel_Elevator_Hall_INTmasthead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hotel-Elevator-Hall-INTmasthead.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ADAM_elevator_3ed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ADAM_elevator_3ed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lobby_on_pinterest_elevator_lobby_lobbies_and_hotel_lobby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lobby-on-pinterest-elevator-lobby-lobbies-and-hotel-lobby.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_75945" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\75945.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo-1527352675495-d54e8f102689" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo-1527352675495-d54e8f102689.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

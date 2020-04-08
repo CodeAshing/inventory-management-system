@@ -74,7 +74,7 @@ namespace frontend.Forms
 
             if (flag == "payment")
             {
-                cmd = new SqlCommand("select  t1.ااسم_العميل, t1.تاريخ,  t1.الفئة  t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم, SUM(t2.المجموع) as المجموع from payment t1 inner join payment t2 on t1.رقم_العقد >= t2.رقم_العقد and t1.ااسم_العميل = t2.ااسم_العميل group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم", con);
+                cmd = new SqlCommand("select  t1.ااسم_العميل, t1.تاريخ,  t1.الفئة , t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم, SUM(t2.المجموع) as المجموع from payment t1 inner join payment t2 on t1.رقم_العقد >= t2.رقم_العقد and t1.ااسم_العميل = t2.ااسم_العميل group by t1.رقم_العقد, t1.المجموع, t1.ااسم_العميل, t1.تاريخ, t1.الفئة, t1.نوع_الدفع, t1.وصف, t1.المبلغ_بالكلمات, t1.مدفوع, t1.تسلم", con);
 
             }
             else if (flag == "receipt")
@@ -452,7 +452,7 @@ namespace frontend.Forms
                 }
                 else
                 {
-                    cmd = new SqlCommand("select  * from Ipay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ=N'" + prs_DateTP.Text + "' union all select '', '', '', N'المبلغ الإجمالي', SUM(القسط), '', sum(النسبة_المئوية), '', '', '' from Ipay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ=N'" + prs_DateTP.Text + "'  ", con);
+                    cmd = new SqlCommand("select  * from Ipay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ>='" + prs_DateTP.Text + "' union all select '', '', '', N'المبلغ الإجمالي', SUM(القسط), '', sum(النسبة_المئوية), '', '', '' from Ipay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ>='" + prs_DateTP.Text + "'  ", con);
                 }
             }
             else if (flag == "maintan")
@@ -464,7 +464,7 @@ namespace frontend.Forms
                 }
                 else
                 {
-                    cmd = new SqlCommand("select  * from Mpay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ=N'" + prs_DateTP.Text + "' union all select '', '', '', N'المبلغ الإجمالي', SUM(القسط), '', sum(النسبة_المئوية), '', '', '' from Mpay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ=N'" + prs_DateTP.Text + "' ", con);
+                    cmd = new SqlCommand("select  * from Mpay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ>='" + prs_DateTP.Text + "' union all select '', '', '', N'المبلغ الإجمالي', SUM(القسط), '', sum(النسبة_المئوية), '', '', '' from Mpay where ااسم_العميل =N'" + PRS_NCB.Text + "' and تاريخ>='" + prs_DateTP.Text + "' ", con);
                 }
             }
             else

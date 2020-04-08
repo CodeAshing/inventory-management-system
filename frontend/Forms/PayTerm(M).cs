@@ -194,7 +194,7 @@ namespace frontend.Forms
 
                 if (ma.flag_new == "yes")
                 {
-                    cmd = new SqlCommand("insert into MCpay values(N'" + ma.name_transfer + "',N'" + ((int.Parse(perCB.Text) * ma.amountO) / 100) + "',N'" + ma.amountO + "',N'" + int.Parse(perCB.Text) + "',N'" + dateTp.Text + "','" + discriptionTB.Text + "',N'لا')", con);
+                    cmd = new SqlCommand("insert into MCpay values(N'" + ma.name_transfer + "','" + Int32.Parse(perCB.Text) * ma.amountO / 100 + "',N'" + ma.amountO + "','" + int.Parse(perCB.Text) + "','" + dateTp.Text + "','" + discriptionTB.Text + "',N'لا')", con);
                     try
                     {
                         con.Open();
@@ -325,7 +325,6 @@ namespace frontend.Forms
 
                 discriptionTB.Text = row.Cells["ديسكريبشن"].Value.ToString();
                 perCB.Text = row.Cells["النسبة_المئوية"].Value.ToString();
-                priceTD.Text = row.Cells["قيمة_العقد"].Value.ToString();
                 dateTp.Text = row.Cells["تاريخ"].Value.ToString();
                 id = int.Parse(row.Cells["رقم_الهوية"].Value.ToString());
             }

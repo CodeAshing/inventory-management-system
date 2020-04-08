@@ -141,7 +141,7 @@ namespace frontend.Forms
                 otherallow.Text = "0";
             }
 
-            cmd = new SqlCommand("insert into موظف values(N'" + nameTB.Text + "',N'" + nationTB.Text + "',N'" + dateTP.Text + "',N'" + designationTB.Text + "','" + int.Parse(basicTB.Text) + "',N'" + CNICTB.Text + "','" + int.Parse(rentTB.Text )+ "','" + int.Parse(foodTB.Text) + "','" + int.Parse(otherallow.Text) + "',N'" + adressTB.Text + "',N'" + genderTB.Text + "',N'" + phoneTB.Text + "',N'" + discriptionTB.Text + "')", con);
+            cmd = new SqlCommand("insert into موظف values(N'" + nameTB.Text + "',N'" + nationTB.Text + "',N'" + dateTP.Text + "',N'" + designationTB.Text + "','" + Int32.Parse(basicTB.Text) + "',N'" + CNICTB.Text + "','" + Int32.Parse(rentTB.Text )+ "','" + Int32.Parse(foodTB.Text) + "','" + Int32.Parse(otherallow.Text) + "',N'" + adressTB.Text + "',N'" + genderTB.Text + "',N'" + phoneTB.Text + "',N'" + discriptionTB.Text + "')", con);
             try
             {
                 con.Open();
@@ -285,7 +285,7 @@ namespace frontend.Forms
 
                     string[] value = searchCB.Text.Split('|');
 
-                cmd = new SqlCommand("update موظف set ااسم_العميل=N'" + nameTB.Text + "',الجنسية=N'" + nationTB.Text + "',تاريخ_الولادة=N'" + dateTP.Text + "',تعيين=N'" + designationTB.Text + "',راتب_اساسي='" + int.Parse(basicTB.Text) + "',أكاما=N'" + CNICTB.Text + "',بدل_الإيجار='" + int.Parse(rentTB.Text) + "',بدل_طعام='" + int.Parse(foodTB.Text) + "',البدلات_الأخرى='" + int.Parse(otherallow.Text) + "',عنوان=N'" + adressTB.Text + "',جنس=N'" + genderTB.Text + "',التيليفون=N'" + phoneTB.Text + "',ديسكريبشن=N'" + discriptionTB.Text + "'WHERE رقم_العقد=" + int.Parse(value[1]), con);
+                cmd = new SqlCommand("update موظف set ااسم_العميل=N'" + nameTB.Text + "',الجنسية=N'" + nationTB.Text + "',تاريخ_الولادة=N'" + dateTP.Text + "',تعيين=N'" + designationTB.Text + "',راتب_اساسي='" + Int32.Parse(basicTB.Text) + "',أكاما=N'" + CNICTB.Text + "',بدل_الإيجار='" + Int32.Parse(rentTB.Text) + "',بدل_طعام='" + Int32.Parse(foodTB.Text) + "',البدلات_الأخرى='" + int.Parse(otherallow.Text) + "',عنوان=N'" + adressTB.Text + "',جنس=N'" + genderTB.Text + "',التيليفون=N'" + phoneTB.Text + "',ديسكريبشن=N'" + discriptionTB.Text + "'WHERE رقم_العقد=" + int.Parse(value[1]), con);
 
                 try
                 {

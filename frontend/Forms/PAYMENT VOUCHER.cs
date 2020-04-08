@@ -63,21 +63,19 @@ namespace frontend.Forms
         }
         private void submitBT_Click_1(object sender, EventArgs e)
         {
-            Print();
             if (priceTb.Text != "")
             {
+                Print();
                 if (reciveCheck.CheckState == CheckState.Unchecked)
                 {
                     int rec_value = 0;
 
-                    cmd = new SqlCommand("insert into payment values(N'" + nametb.Text + "',N'" + dateTP.Text + "',N'" + category.Text + "',N'" + amountypeCB.Text + "',N'" + discription.Text + "',N'" + priceIWCB.Text + "',N'" + int.Parse(priceTb.Text) + "',N'" + rec_value + "')", con);
+                    cmd = new SqlCommand("insert into payment values(N'" + nametb.Text + "',N'" + dateTP.Text + "',N'" + category.Text + "',N'" + amountypeCB.Text + "',N'" + discription.Text + "',N'" + priceIWCB.Text + "',N'" + Int32.Parse(priceTb.Text) + "',N'" + rec_value + "')", con);
 
                     try
                     {
                         con.Open();
                         cmd.ExecuteNonQuery();
-
-                        MessageBox.Show("Record Successfully Inserted", "INFORMATION", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         clearboxes();
                     }
                     catch (Exception ex)
@@ -102,7 +100,6 @@ namespace frontend.Forms
                         con.Open();
                         cmd.ExecuteNonQuery();
 
-                        MessageBox.Show("Record Successfully Inserted", "INFORMATION", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
                         clearboxes();
                     }
                     catch (Exception ex)

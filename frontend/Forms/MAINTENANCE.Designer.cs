@@ -136,9 +136,9 @@
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label17.ForeColor = System.Drawing.Color.Black;
             this.label17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label17.Location = new System.Drawing.Point(455, 259);
+            this.label17.Location = new System.Drawing.Point(458, 259);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(79, 60);
+            this.label17.Size = new System.Drawing.Size(73, 60);
             this.label17.TabIndex = 112;
             this.label17.Text = ":وصف";
             // 

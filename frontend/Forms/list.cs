@@ -82,7 +82,7 @@ namespace frontend.Forms
             if (priceTB.Text != "")
             {
 
-                cmd = new SqlCommand("insert into قائمة values(N'" + nameTB.Text + "','" + int.Parse(priceTB.Text )+"')", con);
+                cmd = new SqlCommand("insert into قائمة values(N'" + nameTB.Text + "','" + Int32.Parse(priceTB.Text )+"')", con);
                 try
                 {
                     con.Open();
@@ -112,7 +112,7 @@ namespace frontend.Forms
 
             if (priceTB.Text != "")
             {
-                cmd = new SqlCommand("delete from قائمة where رقم_العقد=" + int.Parse(idTB.Text), con);
+                cmd = new SqlCommand("delete from قائمة where رقم_العقد=" + Int32.Parse(idTB.Text), con);
                 try
                 {
                     con.Open();

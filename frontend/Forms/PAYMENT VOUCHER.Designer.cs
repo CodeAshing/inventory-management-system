@@ -65,7 +65,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(734, 260);
+            this.label7.Location = new System.Drawing.Point(734, 268);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 78);
             this.label7.TabIndex = 92;
@@ -160,7 +160,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(734, 161);
+            this.label3.Location = new System.Drawing.Point(734, 169);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 78);
             this.label3.TabIndex = 85;
@@ -229,7 +229,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(734, 31);
+            this.label1.Location = new System.Drawing.Point(734, 39);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 78);
             this.label1.TabIndex = 79;
@@ -269,7 +269,7 @@
             this.Controls.Add(this.nametb);
             this.Controls.Add(this.label1);
             this.Name = "FPayment";
-            this.Text = "PAYMENT VOUCHER";
+            this.Text = "قسيمة دفع";
             this.Load += new System.EventHandler(this.FPayment_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

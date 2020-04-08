@@ -333,6 +333,16 @@ namespace frontend.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap photo_1527352675495_d54e8f102689 {
+            get {
+                object obj = ResourceManager.GetObject("photo-1527352675495-d54e8f102689", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo_1565417814737_6b4097de8a3a {
             get {
                 object obj = ResourceManager.GetObject("photo_1565417814737_6b4097de8a3a", resourceCulture);

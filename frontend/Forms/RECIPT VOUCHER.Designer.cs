@@ -59,11 +59,11 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(738, 23);
+            this.label1.Location = new System.Drawing.Point(738, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 78);
             this.label1.TabIndex = 61;
@@ -79,7 +79,7 @@
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -104,7 +104,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -129,11 +129,11 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label3.Location = new System.Drawing.Point(738, 153);
+            this.label3.Location = new System.Drawing.Point(738, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 78);
             this.label3.TabIndex = 70;
@@ -141,7 +141,7 @@
             // 
             // priceTb
             // 
-            this.priceTb.Location = new System.Drawing.Point(284, 159);
+            this.priceTb.Location = new System.Drawing.Point(286, 159);
             this.priceTb.Name = "priceTb";
             this.priceTb.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.priceTb.Size = new System.Drawing.Size(184, 26);
@@ -154,7 +154,7 @@
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -181,7 +181,7 @@
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -224,11 +224,11 @@
             // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label7.Location = new System.Drawing.Point(738, 252);
+            this.label7.Location = new System.Drawing.Point(738, 263);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(60, 78);
             this.label7.TabIndex = 77;
@@ -239,6 +239,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(812, 520);
             this.Controls.Add(this.discription);
             this.Controls.Add(this.label7);
