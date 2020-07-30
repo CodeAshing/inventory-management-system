@@ -12,7 +12,7 @@ create table Spare (
     تاريخ nvarchar(150)collate arabic_ci_ai 
     ); 
 
-
+	DBCC CHECKIDENT('Spare', RESEED, 0)
 
 	create table قطع_غيار (
     رقم_العقد int IDENTITY(1,1) primary key,

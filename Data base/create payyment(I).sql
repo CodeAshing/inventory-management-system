@@ -7,7 +7,7 @@
     القسط BIGint  ,
     قيمة_العقد BIGint,
     النسبة_المئوية float ,
-    تاريخ nvarchar(100) collate arabic_ci_ai,
+    تاريخ varchar(100) ,
     ديسكريبشن  nvarchar (1000)collate arabic_ci_ai,
     مدفوع nvarchar(100) collate arabic_ci_ai
     ); 
@@ -25,7 +25,7 @@
     القسط BIGint  ,
     قيمة_العقد BIGint,
     النسبة_المئوية float ,
-    تاريخ nvarchar(100) collate arabic_ci_ai,
+    تاريخ varchar(100) ,
     ديسكريبشن  nvarchar (1000)collate arabic_ci_ai,
     مدفوع nvarchar(100) collate arabic_ci_ai
     ); 
